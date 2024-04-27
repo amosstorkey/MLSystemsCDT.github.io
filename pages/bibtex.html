@@ -1,0 +1,72 @@
+---
+layout: default
+permalink: /bibtex/
+redirect_from:
+  - /bibtex.html
+  - /bibtex
+title: Publications
+---
+
+<div>
+    <h2>Publications</h2>
+    <p>
+    <button class="conference">conference</button>
+    <button class="workshop">workshop</button>
+    <button class="preprint">preprint</button>
+    <button class="journal">journal</button>
+    <button class="techreport">tech report</button>
+    </p>
+    <ul class='publication-list'>
+        {% assign r_brace = "}" %}  
+        {% assign l_brace = "{" %}  
+        {% assign monthlist = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec" | split: " " %}
+
+        {% assign sorted_pubs = site.data.publications | sort: "month" | sort: "year" | reverse %}
+        {% for pub in  sorted_pubs %}
+            {% assign id = pub.title | append: '-' | append: pub.published | slugify  %}
+            {% assign monthref = pub.month | minus: 1 %}
+            {% if pub.type == "conference" or pub.type == "workshop" %}
+                @inproceedings{{ l_brace }}{{pub.authors | first | split: " " | last}}{{ pub.year }}{{pub.title | remove: "The " | remove: "A " | remove: l_brace | remove: r_brace | remove: ":" | remove: "," | split: " " | first }},<br>
+                author = {{ l_brace }}{{ pub.authors | join: " and " | strip }}{{ r_brace }},<br>
+                title = {{ l_brace }}{{ pub.title }}{{ r_brace }},<br>
+                year = {{ l_brace }}{{ pub.year }}{{ r_brace }},<br>
+                month = {{ l_brace }}{{ monthlist[ monthref ] }}{{ r_brace }},<br>
+                booktitle = {{ l_brace }}{{ pub.published }}{{ r_brace }},<br>
+                url = {{ l_brace }}{{ pub.url }}{{ r_brace }},<br>
+                {{ r_brace }}<br>
+            {% endif %}       
+            {% if pub.type == "journal" %}
+                @article{{ l_brace }}{{pub.authors | first | split: " " | last}}{{ pub.year }}{{pub.title | remove: "The " | remove: "A " | remove: l_brace | remove: r_brace | remove: ":" | remove: "," | split: " " | first }},<br>
+                author = {{ l_brace }}{{ pub.authors | join: " and " | strip }}{{ r_brace }},<br>
+                title = {{ l_brace }}{{ pub.title }}{{ r_brace }},<br>
+                year = {{ l_brace }}{{ pub.year }}{{ r_brace }},<br>
+                month = {{ l_brace }}{{ monthlist[ monthref ] }}{{ r_brace }},<br>
+                journal = {{ l_brace }}{{ pub.published }}{{ r_brace }},<br>
+                volume = {{ l_brace }}{{ pub.volume }}{{ r_brace }},<br>           
+                url = {{ l_brace }}{{ pub.url }}{{ r_brace }},<br>
+                {{ r_brace }}<br>
+            {% endif %}       
+            {% if pub.type == "techreport" %}
+                @techreport{{ l_brace }}{{pub.authors | first | split: " " | last}}{{ pub.year }}{{pub.title | remove: "The " | remove: "A " | remove: l_brace | remove: r_brace | remove: ":" | remove: "," | split: " " | first }},<br>
+                author = {{ l_brace }}{{ pub.authors | join: " and " | strip }}{{ r_brace }},<br>
+                title = {{ l_brace }}{{ pub.title }}{{ r_brace }},<br>
+                year = {{ l_brace }}{{ pub.year }}{{ r_brace }},<br>
+                month = {{ l_brace }}{{ monthlist[ monthref ] }}{{ r_brace }},<br>
+                institution = {University of Edinburgh},
+                number = {{ l_brace }}{{ pub.number }}{{ r_brace }},<br>           
+                url = {{ l_brace }}{{ pub.url }}{{ r_brace }},<br>
+                {{ r_brace }}<br>
+            {% endif %}       
+            {% if pub.type == "preprint" %}
+                @unpublished{{ l_brace }}{{pub.authors | first | split: " " | last}}{{ pub.year }}{{pub.title | remove: "The " | remove: "A " | remove: l_brace | remove: r_brace | remove: ":" | remove: "," | split: " " | first }},<br>
+                author = {{ l_brace }}{{ pub.authors | join: " and " | strip }}{{ r_brace }},<br>
+                title = {{ l_brace }}{{ pub.title }}{{ r_brace }},<br>
+                year = {{ l_brace }}{{ pub.year }}{{ r_brace }},<br>
+                month = {{ l_brace }}{{ monthlist[ monthref ] }}{{ r_brace }},<br>
+                institution = {University of Edinburgh}, <br>
+                url = {{ l_brace }}{{ pub.url }}{{ r_brace }},<br>
+                {{ r_brace }}<br>
+            {% endif %}       
+        {% endfor %}
+    </ul>
+</div>

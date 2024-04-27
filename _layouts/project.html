@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1 class="post-title">{{ page.display-name}}</h1>
+ 
+  {{ page.content }}
+
+</article>
+
+<div>
+    <h2>Associated Publications</h2>
+    <p>
+    <button class="conference">conference</button>
+    <button class="workshop">workshop</button>
+    <button class="preprint">preprint</button>
+    <button class="journal">journal</button>
+    <button class="techreport">tech report</button>
+    </p>
+    <ul class='publication-list'>
+    {% assign sorted_pubs = site.data.publications | sort: "month" | sort: "year" | reverse %}
+    {% for pub in  sorted_pubs %}
+        {% assign id = pub.title | append: '-' | append: pub.published | slugify  %}
+        {% if pub.project == page.name %}
+        {% if pub.year > 2009 %} 
+        <li class='publication'>
+        <div class='clearfix'>
+                  <a href="{{ pub.url }}" style="text-decoration: none;">
+            <button class="{{ pub.type }}">
+                       {{ pub.year }}/{%if pub.month < 10 %}0{% endif %}{{ pub.month }}:
+                    </button>
+                </a>
+            <div class='publication-details'>
+                <a class='publication-title'  href="{{ pub.url }}">
+
+                  {{ pub.title }}
+
+                </a>
+                <p class='publication-published'>
+                {{ pub.published }} 
+                </p>
+                <div class='publication-authors'>
+                    <small> {{ pub.authors | join: ', ' }} </small>
+                    <button class="btn" data-toggle="collapse"
+                      data-target="#abs-{{ id }}">
+                        Abstract
+                    </button>
+                </div>
+                <div id="abs-{{ id }}" class="collapse publication-abstract">
+                    {{ pub.abstract }}
+                </div>
+            </div>
+        </div>
+        </li>
+       {% endif %}
+       {% endif %}
+    {% endfor %}
+    </ul>
+</div>
+

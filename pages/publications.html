@@ -1,0 +1,123 @@
+---
+layout: default
+permalink: /publications/
+redirect_from:
+  - /publications.html
+  - /publications
+title: Publications
+
+---
+
+<div>
+    <h2>Publications</h2>
+    <p>
+        See the <a href="../publicationslist/">list version</a> for a pastable list of publications, and <a href="https://homepages.inf.ed.ac.uk/amos/publications.html">earlier publications</a> for prior publications of the group</a>.
+    </p>
+    <p>
+    <button class="conference">conference</button>
+    <button class="workshop">workshop</button>
+    <button class="preprint">preprint</button>
+    <button class="journal">journal</button>
+    <button class="techreport">tech report</button>
+    </p>
+    <ul class='publication-list'>
+    {% assign r_brace = "}" %}  
+    {% assign l_brace = "{" %}  
+    {% assign monthlist = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec" | split: " " %}
+    {% assign sorted_pubs = site.data.publications | sort: "month" | sort: "year" | reverse %}
+    {% for pub in  sorted_pubs %}
+        {% assign id = pub.title | append: '-' | append: pub.published | slugify  %}
+        {% if pub.year > 2009 %} 
+        {% assign monthref = pub.month | minus: 1 %}
+        <li class='publication'>
+        <div class='clearfix'>
+                  <a href="{{ pub.url }}" style="text-decoration: none;">
+            <button class="{{ pub.type }}">
+                       {{ pub.year }}/{%if pub.month < 10 %}0{% endif %}{{ pub.month }}:
+                    </button>
+                </a>
+            <div class='publication-details'>
+                <a class='publication-title'  href="{{ pub.url }}">
+                {{ pub.title | remove: '{' | remove: r_brace }} 
+
+                </a>
+                <p class='publication-published'>
+                {{ pub.published }} 
+                </p>
+                <div class='publication-authors'>
+                    <small> {{ pub.authors | join: ', ' }} </small>
+                    <button class="btn" data-toggle="collapse"
+                      data-target="#abs-{{ id }}">
+                        Abstract
+                    </button>
+                    <button class="bibtex" data-toggle="collapse"
+                      data-target="#bib-{{ id }}">
+                        Bibtex
+                    </button>
+                </div>
+                <div id="abs-{{ id }}" class="collapse publication-abstract">
+                    {{ pub.abstract }}
+                </div>
+                <div id="bib-{{ id }}" class="collapse publication-abstract">
+                    {% if pub.type == "conference" or pub.type == "workshop" %}
+                        @inproceedings{{ l_brace }}{{pub.authors | first | split: " " | last}}{{ pub.year }}_{{ pub.month }}_{{pub.title | remove: "The " | remove: "A " | remove: "-" |remove: l_brace | remove: r_brace | remove: ":" | remove: "," | split: " " | first }},<br>
+                        author = {{ l_brace }}{{ pub.authors | join: " and " | strip }}{{ r_brace }},<br>
+                        title = {{ l_brace }}{{ pub.title }}{{ r_brace }},<br>
+                        year = {{ l_brace }}{{ pub.year }}{{ r_brace }},<br>
+                        month = {{ l_brace }}{{ monthlist[ monthref ] }}{{ r_brace }},<br>
+                        booktitle = {{ l_brace }}{{ pub.published }}{{ r_brace }},<br>
+                        {% if pub.appeared %}  
+                          appeared = {{ l_brace }}{{pub.appeared}}{{ r_brace }}, <br>
+                        {% endif %}
+                        {% if pub.accepted %}  
+                           accepted = {{ l_brace }}{{pub.accepted}}{{ r_brace }}, <br>
+                        {% endif %}
+                        url = {{ l_brace }}{{ pub.url }}{{ r_brace }},<br>
+                        {{ r_brace }}<br>
+                    {% endif %}       
+                    {% if pub.type == "journal" %}
+                        @article{{ l_brace }}{{pub.authors | first | split: " " | last}}{{ pub.year }}_{{ pub.month }}_{{pub.title | remove: "The " | remove: "A " | remove: "-" |remove: l_brace | remove: r_brace | remove: ":" | remove: "," | split: " " | first }},<br>
+                        author = {{ l_brace }}{{ pub.authors | join: " and " | strip }}{{ r_brace }},<br>
+                        title = {{ l_brace }}{{ pub.title }}{{ r_brace }},<br>
+                        year = {{ l_brace }}{{ pub.year }}{{ r_brace }},<br>
+                        month = {{ l_brace }}{{ monthlist[ monthref ] }}{{ r_brace }},<br>
+                        journal = {{ l_brace }}{{ pub.published }}{{ r_brace }},<br>
+                        volume = {{ l_brace }}{{ pub.volume }}{{ r_brace }},<br>           
+                        {% if pub.appeared %}  
+                          appeared = {{ l_brace }}{{pub.appeared}}{{ r_brace }}, <br>
+                        {% endif %}
+                        {% if pub.accepted %}  
+                           accepted = {{ l_brace }}{{pub.accepted}}{{ r_brace }}, <br>
+                        {% endif %}
+                        url = {{ l_brace }}{{ pub.url }}{{ r_brace }},<br>
+                        {{ r_brace }}<br>
+                    {% endif %}       
+                    {% if pub.type == "techreport" %}
+                        @techreport{{ l_brace }}{{pub.authors | first | split: " " | last}}{{ pub.year }}_{{ pub.month }}_{{pub.title | remove: "The " | remove: "A " | remove: "-" | remove: l_brace | remove: r_brace | remove: ":" | remove: "," | split: " " | first }},<br>
+                        author = {{ l_brace }}{{ pub.authors | join: " and " | strip }}{{ r_brace }},<br>
+                        title = {{ l_brace }}{{ pub.title }}{{ r_brace }},<br>
+                        year = {{ l_brace }}{{ pub.year }}{{ r_brace }},<br>
+                        month = {{ l_brace }}{{ monthlist[ monthref ] }}{{ r_brace }},<br>
+                        institution = {School of Informatics, University of Edinburgh},
+                        number = {{ l_brace }}{{ pub.number }}{{ r_brace }},<br>           
+                        url = {{ l_brace }}{{ pub.url }}{{ r_brace }},<br>
+                        {{ r_brace }}<br>
+                    {% endif %}       
+                    {% if pub.type == "preprint" %}
+                        @unpublished{{ l_brace }}{{pub.authors | first | split: " " | last}}{{ pub.year }}_{{ pub.month }}_{{pub.title | remove: "The " | remove: "A " | remove: "-" |remove: l_brace | remove: r_brace | remove: ":" | remove: "," | split: " " | first }},<br>
+                        author = {{ l_brace }}{{ pub.authors | join: " and " | strip }}{{ r_brace }},<br>
+                        title = {{ l_brace }}{{ pub.title }}{{ r_brace }},<br>
+                        year = {{ l_brace }}{{ pub.year }}{{ r_brace }},<br>
+                        month = {{ l_brace }}{{ monthlist[ monthref ] }}{{ r_brace }},<br>
+                        institution = {University of Edinburgh}, <br>
+                        url = {{ l_brace }}{{ pub.url }}{{ r_brace }},<br>
+                        {{ r_brace }}<br>
+                    {% endif %}       
+                </div>
+            </div>
+        </div>
+        </li>
+       {% endif %}
+    {% endfor %}
+    </ul>
+</div>

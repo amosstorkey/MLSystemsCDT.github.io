@@ -1,0 +1,117 @@
+- name: Amos Storkey
+  surname: Storkey
+  display-name: Prof. Amos Storkey
+  role: faculty
+  affiliation: Informatics
+  url: https://homepages.inf.ed.ac.uk/amos/
+
+- name: Elliot Crowley
+  surname: Crowley
+  display-name: Dr Elliot J. Crowley
+  role: faculty
+  url: https://elliotjcrowley.github.io/
+  affiliation: Engineering
+  affiliation-url: https://www.eng.ed.ac.uk
+    
+- name: Henry Gouk
+  surname: Gouk
+  display-name: Dr Henry Gouk
+  role: faculty
+  affiliation: Informatics
+  url: https://www.henrygouk.com/
+    
+- name: Joseph Mellor
+  surname: Mellor
+  display-name: Dr Joseph Mellor
+  role: research associate
+  url: https://mellorjc.github.io
+  affiliation: Usher Institute
+  affiliation-url: https://www.ed.ac.uk/usher
+
+- name: Antreas Antoniou
+  surname: Antoniou
+  display-name: Dr Antreas Antoniou
+  role: research associate
+  url: https://antreasantoniou.github.io/
+
+- name: Dongge Han
+  surname: Han
+  display-name: Dr Dongge Han
+  role: research associate
+  url: https://hdg94.github.io/
+
+- name: Linus Ericsson
+  surname: Ericsson
+  display-name: Dr Linus Ericsson
+  role: research associate
+  url: https://linusericsson.github.io
+  
+- name: Luke Darlow
+  surname: Darlow
+  display-name: Dr Luke Darlow
+  role: Researcher
+  affiliation: Huawei Edinburgh RC
+  url: http://lukedarlow.com/
+
+- name: William Toner
+  surname: Toner
+  role: PhD student
+  url: http://www.inf.ed.ac.uk/people/students/William_Toner.html
+  
+- name: Alessandro Fontanella
+  surname: Fontanella
+  display-name: Alessandro Fontanella
+  role: PhD student
+  url: http://www.inf.ed.ac.uk/people/students/Alessandro_Fontanella.html
+
+- name: Chenhongyi Yang
+  surname: Yang
+  display-name: Chenhongyi Yang
+  role: PhD student
+  url: https://chenhongyiyang.com
+  
+- name: Adam Jelley
+  surname: Jelley
+  display-name: Adam Jelley
+  role: PhD student
+  url: http://adamjelley.github.io/
+
+- name: Justin Engelmann
+  surname: Engelmann
+  display-name: Justin Engelmann
+  role: PhD student
+  url: https://justinengelmann.github.io/
+
+- name: Thomas Lee
+  surname: Lee
+  display-name: Thomas Lee
+  role: PhD student
+  url: https://tlee43.github.io/
+
+- name: Trevor McInroe
+  surname: McInroe
+  display-name: Trevor McInroe
+  role: PhD student
+  url: https://trevormcinroe.github.io/
+
+- name: Miguel Espinosa
+  surname: Espinosa
+  display-name: Miguel Espinosa
+  role: PhD student
+  url: https://miquel-espinosa.github.io/
+
+- name: Sunny Joshi
+  surname: Joshi
+  display-name: Sunny Joshi
+  role: PhD student
+
+- name: Shiwen Qin
+  surname: Qin
+  display-name: Shiwen Qin
+  role: PhD student
+  url: https://shiwenqin.github.io/
+
+- name: Philipp Bomatter
+  surname: Bomatter
+  display-name: Philipp Bomatter
+  role: PhD student

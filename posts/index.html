@@ -1,0 +1,55 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <h4 class="post-title">
+      {% if post.linkto %}
+      <a href="{{ post.linkto}}">
+         {% else %}
+      <a href="{{ site.baseurl }}{{ post.url }}">
+         {% endif %}
+        {{ post.title }}
+         {% if post.linkto %}
+              (x-post)
+            {% endif %}
+      </a>
+    </h4>
+
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+  <div class='clearfix'>
+    <div class='member-photo-card'>
+     {% if post.photo %}
+     {% assign id = post.photo %}
+     {% else %}
+     {% assign id = post.author | slugify %}
+     {% endif %}
+
+      <img class='member-photo' src='/photos/{{ id }}.jpg' width='50' />
+      <div class='member-details'>
+        <p class='author-name' style="padding-left:10px">
+            {{ post.author }}
+        </p>
+      </div>
+  </div>
+  </div>
+
+  </article>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

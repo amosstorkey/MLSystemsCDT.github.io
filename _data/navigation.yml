@@ -1,0 +1,17 @@
+- text: Home
+  url: /
+  
+- text: Publications
+  url: /publications/
+
+- text: Blog
+  url: /posts/
+  
+- text: Contact
+  url: /contact/
+  
+- text: Vacancies
+  url: /vacancies/
+
+- text: GitHub
+  url: https://github.com/BayesWatch

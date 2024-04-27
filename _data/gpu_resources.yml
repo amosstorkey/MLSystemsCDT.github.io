@@ -1,0 +1,54 @@
+- name: benrinnes
+  gpus: 8 x GeForce RTX 2080 Ti
+  storage: scratch_ssd (SSD 917G), scratch1 (9.1T), scratch2 (9.1T)
+  info:
+
+- name: bruichladdich
+  gpus: 8 x GeForce RTX 2080 Ti
+  storage: scratch_fast (SSD 1.5T), scratch1 (1.8T), scratch2 (1.8T)
+  info: ANC
+
+- name: cheshire
+  gpus: 8 x GeForce RTX 2080 Ti
+  storage: scratch_fast (SSD 1.5T), scratch1 (1.8T), scratch2 (1.8T)
+  info:
+
+- name: edwards
+  gpus: 8 x GeForce RTX 2080 Ti
+  storage: scratch_fast (SSD 1.5T), scratch1 (1.8T), scratch2 (1.8T)
+  info:
+
+- name: laphroaig
+  gpus: 8 x GeForce RTX 2080 Ti
+  storage: scratch2 (1.8T), /tmp (9.5T)
+  info:
+
+- name: tomintoul
+  gpus: 4 x TITAN X (Pascal)
+  storage: scratch (792G), scratch_big (917G), /tmp (9.5T)
+  info: ANC
+
+- name: tullibardine
+  gpus: 4 x TITAN X (Pascal)
+  storage: scratch (792G), scratch_big (917G), /tmp (9.5T)
+  info: ANC
+
+- name: wolfburn
+  gpus: 4 x TITAN X (Pascal)
+  storage: scratch (792G), scratch_big (917G), /tmp (9.5T)
+  info:
+
+- name: stonesoup
+  gpus: 4 x Tesla K40c
+  storage: scratch (792G), scratch_big (2.7T), /tmp (9.5T)
+  info: ANC
+
+- name: cdtcluster
+  gpus: Tesla K40m, GeForce GTX Titan X, and GeForce Titan X, FMI
+  storage:
+  info: <a href="http://computing.help.inf.ed.ac.uk/james-and-charles-cluster">docs</a>
+
+- name: mlp
+  gpus: 200 x NVIDIA GTX1060 6GB
+  storage:
+  info: <a href="http://computing.help.inf.ed.ac.uk/teaching-cluster">docs</a>

@@ -1,0 +1,202 @@
+- name: Gavia Gray
+  surname: Gray
+  role: PhD student
+  url: http://gra.ygav.in/
+  leavedate: 2019
+
+- name: Stanislaw Jastrzebski
+  surname: Jastrzebski
+  role: PhD student
+  url: http://kudkudak.github.io/
+  leavedate: 2019
+
+- name: Matt Graham
+  surname: Graham
+  role: PhD student
+  url: https://matt-graham.github.io/
+  leavedate: 2017
+
+- name: Jinli Hu
+  surname: Hu
+  role: PhD student
+  url: https://www.linkedin.com/in/arkjinli/
+  leavedate: 2016
+  
+- name: Zhanxing Zhu
+  surname: Zhu
+  role: PhD student
+  url: http://english.math.pku.edu.cn/peoplefaculty/473.html
+  leavedate: 2016
+
+- name: Colin Buchanan
+  surname: Buchanan
+  role: PhD student
+  url: https://www.ed.ac.uk/profile/colin-buchanan
+  leavedate: 2014
+
+- name: Ksenia Andreyeva
+  surname: Andreyeva
+  role: PhD student
+  leavedate: 2018
+
+- name: Eleni Zarogianni
+  surname: Zarogianni
+  role: PhD student
+  url: https://uk.linkedin.com/in/eleni-zarogianni-b8248846
+  leavedate: 2016
+
+- name: Krzysztof Geras
+  surname: Geras
+  role: MSc student
+  url: http://cs.nyu.edu/~kgeras/
+  leavedate: 2012
+
+- name: Tom Griffiths
+  surname: Griffiths
+  role: PhD student
+  url: https://www.linkedin.com/in/tomgriffithsuk/
+  leavedate: 2006
+  
+- name: Ben Williams
+  surname: Williams
+  role: PhD student
+  leavedate: 2008
+
+- name: Bessi Bjarnason
+  surname: Bjarnason
+  role: PhD student
+  url: https://www.mbl.is/greinasafn/grein/1385573/
+  leavedate: 2009
+  
+- name: James Withers
+  surname: Wither
+  role: PhD student
+  url: https://www.linkedin.com/in/jithers/
+  leavedate: 2009
+
+- name: Lawrence Murray
+  surname: Murray
+  role: PhD student
+  url: http://www.indii.org/
+  leavedate: 2008
+
+- name: Felix Agakov
+  surname: Agakov
+  role: research associate
+  url: http://aivalley.com/
+  leavedate: 2012
+
+- name: Athina Spiliopoulou
+  surname: Spiliopoulou
+  role: PhD student
+  url: http://www.ed.ac.uk/profile/athina-spiliopoulou
+  leavedate: 2012
+
+- name: Andrew Dai
+  surname: Dai
+  role: PhD student
+  url: http://research.google.com/pubs/AndrewDai.html
+  leavedate: 2012
+
+- name: David Reichert
+  surname: Reichert
+  role: PhD student
+  url: http://serre-lab.clps.brown.edu/person/david-reichert/
+  leavedate: 2012
+
+- name: James Wilson
+  surname: Wilson
+  role: MScRes
+  url: https://sml-group.cc/authors/james_wilson/
+  leavedate: 2016
+  
+- name: Krzysztof Gorgolewski
+  surname: Gorgolewski
+  role: PhD student
+  url: http://homepages.inf.ed.ac.uk/s0786143/
+  leavedate: 2012
+
+- name: Jon Clayden
+  surname: Clayden
+  role: PhD student
+  url: http://www.homepages.ucl.ac.uk/~sejjjd2
+  leavedate: 2007
+
+- name: Jono Millin
+  surname: Millin
+  role: PhD student
+  url: https://www.linkedin.com/in/jonomillin
+  leavedate: 2013
+
+- name: Jakub Piatkowski
+  surname: Piatkowski
+  role: PhD student
+  url: https://www.linkedin.com/in/jakubpiatkowski/
+  leavedate: 2013
+
+- name: Peter Orchard
+  surname: Orchard
+  role: PhD student
+  url: https://www.linkedin.com/in/peter-orchard-91b07817/
+  leavedate: 2014
+
+- name: Simon Lyons
+  surname: Lyons
+  role: PhD student
+  url: https://www.linkedin.com/in/simon-lyons-402346a6/
+  leavedate: 2014
+  
+- name: Massimiliano Patacchiola
+  surname: Patacchiola
+  display-name: Dr Massimiliano Patacchiola
+  role: research associate
+  url: https://mpatacchiola.github.io
+  leavedate: 2021
+
+- name: Jack Turner
+  surname: Turner
+  display-name: Jack Turner
+  role: PhD student
+  url: https://jack-willturner.github.io
+  leavedate: 2021
+  
+- name: Eleanor Platt
+  surname: Platt
+  role: PhD student
+  leavedate: 2022
+  
+- name: Wenwen Li
+  surname: Li
+  display-name: Dr Wenwen Li
+  role: research associate
+  leavedate: 2022
+  
+- name: James Owers
+  surname: Owers
+  role: PhD student
+  url: https://jamesowers.github.io/
+  leavedate: 2022
+  
+- name: Harrison Edwards
+  surname: Edwards
+  role: PhD student
+  url: https://github.com/harri-edwards/
+  working-on: deep representation learning
+  affiliation: OpenAI
+  affiliation-url: https://openai.com/
+  leavedate: 2022
+  
+- name: Mateusz Ochał
+  surname: Ochał
+  role: PhD student
+  leavedate: 2023
+
+- name: Paul Micaelli
+  surname: Micaelli
+  role: PhD student
+  leavedate: 2023
+
+- name: Asif Khan
+  surname: Khan
+  leavedate: 2023
+  url: https://mdasifkhan.github.io/

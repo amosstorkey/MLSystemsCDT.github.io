@@ -1,0 +1,933 @@
+- title: Asymptotically Exact Inference in Differentiable Generative Models
+  authors: [Matt Graham, Amos Storkey]
+  type: journal
+  published: Electronic Journal of Statistics
+  year: 2017
+  month: 12
+  url: http://dx.doi.org/10.1214/17-EJS1340SI
+  volume: 1
+  abstract: >
+    Many generative models can be expressed as a differentiable function applied to input variables sampled from a known probability distribution. This framework includes both the generative component of learned parametric models such as variational autoencoders and generative adversarial networks, and also procedurally defined simulator models which involve only differentiable operations. Though the distribution on the input variables to such models is known, often the distribution on the output variables is only implicitly defined. We present a method for performing efficient Markov chain Monte Carlo inference in such models when conditioning on observations of the model output. For some models this offers an asymptotically exact inference method where approximate Bayesian computation might otherwise be employed. We use the intuition that computing conditional expectations is equivalent to integrating over a density defined on the manifold corresponding to the set of inputs consistent with the observed outputs. This motivates the use of a constrained variant of Hamiltonian Monte Carlo which leverages the smooth geometry of the manifold to move between inputs exactly consistent with observations. We validate the method by performing inference experiments in a diverse set of models.
+  
+  
+- title: "Continuously Tempered {H}amiltonian {M}onte {C}arlo"
+  authors: [Matt Graham, Amos Storkey]
+  type: conference
+  published: Conference on Uncertainty in Artificial Intelligence (UAI)
+  year: 2017
+  month: 8
+  url: https://arxiv.org/abs/1704.03338
+  abstract: >
+    Hamiltonian Monte Carlo (HMC) is a powerful Markov chain Monte Carlo (MCMC) method for performing approximate inference in complex probabilistic models of continuous variables. In common with many MCMC methods, however, the standard HMC approach performs poorly in distributions with multiple isolated modes. We present a method for augmenting the Hamiltonian system with an extra continuous temperature control variable which allows the dynamic to bridge between sampling a complex target distribution and a simpler unimodal base distribution. This augmentation both helps improve mixing in multimodal targets and allows the normalisation constant of the target distribution to be estimated. The method is simple to implement within existing HMC code, requiring only a standard leapfrog integrator. We demonstrate experimentally that the method is competitive with annealed importance sampling and simulating tempering methods at sampling from challenging multimodal distributions and estimating their normalising constants.
+
+- title: Towards a Neural Statistician
+  authors: [Harrison Edwards, Amos Storkey]
+  type: conference
+  published: International Conference on Learning Representations (ICLR)
+  year: 2017
+  month: 4
+  project: meta
+  url: https://arxiv.org/abs/1606.02185
+  abstract: >
+    An efficient learner is one who reuses what they already know to tackle a new problem. For a machine learner, this means understanding the similarities amongst datasets. In order to do this, one must take seriously the idea of working with datasets, rather than datapoints, as the key objects to model. Towards this goal, we demonstrate an extension of a variational autoencoder that can learn a method for computing representations, or statistics, of datasets in an unsupervised fashion. The network is trained to produce statistics that encapsulate a generative model for each dataset. Hence the network enables efficient learning from new datasets for both unsupervised and supervised tasks. We show that we are able to learn statistics that can be used for: clustering datasets, transferring generative models to new datasets, selecting representative samples of datasets and classifying previously unseen classes. We refer to our model as a neural statistician, and by this we mean a neural network that can learn to compute summary statistics of datasets without supervision.
+
+- title: Asymptotically Exact Inference in Differentiable Generative Models
+  authors: [Matt Graham, Amos Storkey]
+  type: conference
+  published: International Conference on Artificial Intelligence and Statistics (AISTATS)
+  year: 2017
+  month: 4
+  url: https://arxiv.org/abs/1605.07826
+  abstract: >
+    Many generative models can be expressed as a differentiable function of random inputs drawn from some simple probability density. This framework includes both deep generative architectures such as Variational Autoencoders and a large class of procedurally defined simulator models. We present a method for performing efficient MCMC inference in such models when conditioning on observations of the model output. For some models this offers an asymptotically exact inference method where Approximate Bayesian Computation might otherwise be employed. We use the intuition that inference corresponds to integrating a density across the manifold corresponding to the set of inputs consistent with the observed outputs. This motivates the use of a constrained variant of Hamiltonian Monte Carlo which leverages the smooth geometry of the manifold to coherently move between inputs exactly consistent with observations. We validate the method by performing inference tasks in a diverse set of models.
+
+- title: Censoring Representations with an Adversary
+  authors: [Harrison Edwards, Amos Storkey]
+  type: conference
+  published: International Conference on Learning Representations (ICLR)
+  year: 2016
+  month: 3
+  url: https://arxiv.org/abs/1511.05897
+  abstract: >
+    In practice, there are often explicit constraints on what representations or decisions are acceptable in an application of machine learning. For example it may be a legal requirement that a decision must not favour a particular group. Alternatively it can be that that representation of data must not have identifying information. We address these two related issues by learning flexible representations that minimize the capability of an adversarial critic. This adversary is trying to predict the relevant sensitive variable from the representation, and so minimizing the performance of the adversary ensures there is little or no information in the representation about the sensitive variable. We demonstrate this adversarial approach on two problems: making decisions free from discrimination and removing private information from images. We formulate the adversarial model as a minimax problem, and optimize that minimax objective using a stochastic gradient alternate min-max optimizer. We demonstrate the ability to provide discriminant free representations for standard test problems, and compare with previous state of the art methods for fairness, showing statistically significant improvement across most cases. The flexibility of this method is shown via a novel problem: removing annotations from images, from unaligned training examples of annotated and unannotated images, and with no a priori knowledge of the form of annotation provided to the model.
+
+- title: Stochastic Parallel Block Coordinate Descent for Large-scale Saddle Point Problems
+  authors: [Zhanxing Zhu, Amos Storkey]
+  type: conference
+  published: AAAI Conference on Artificial Intelligence (AAAI)
+  year: 2016
+  month: 2
+  url: https://arxiv.org/abs/1511.07294
+  abstract: >
+    We consider convex-concave saddle point problems with a separable structure and non-strongly convex functions. We propose an efficient stochastic block coordinate descent method using adaptive primal-dual updates, which enables flexible parallel optimization for large-scale problems. Our method shares the efficiency and flexibility of block coordinate descent methods with the simplicity of primal-dual methods and utilizing the structure of the separable convex-concave saddle point problem. It is capable of solving a wide range of machine learning applications, including robust principal component analysis, Lasso, and feature selection by group Lasso, etc. Theoretically and empirically, we demonstrate significantly better performance than state-of-the-art methods in all these applications.
+
+- title: "Evaluation of a Pre-surgical Functional {MRI} Workflow: From Data Acquisition to Reporting"
+  authors: [Cyril Pernet, Krzysztof J Gorgolewski, Dominic Job, David Rodriguez, Amos J Storkey, Ian Whittle, Joanna Wardlaw]
+  type: journal
+  published: International Journal of Medical Informatics
+  volume: 86
+  pages: 37-42
+  year: 2016
+  month: 2
+  url: http://homepages.inf.ed.ac.uk/amos/publications/Pernet_al_Evaluation_Pre_Surgical.pdf
+  abstract: >
+    Purpose: Present and assess clinical protocols and associated automated workflow for pre-surgical functional magnetic resonance imaging in brain tumor patients. Methods: Protocols were validated using a single-subject reliability approach based on 10 healthy control subjects. Results from the automated workflow were evaluated in 9 patients with brain tumors, comparing fMRI results to direct electrical stimulation (DES) of the cortex. Results: Using a new approach to compute single-subject fMRI reliability in controls, we show that not all tasks are suitable in the clinical context, even if they show meaningful results at the group level. Comparison of the fMRI results from patients to DES showed good correspondence between techniques (odds ratio 36). Conclusion: Providing that validated and reliable fMRI protocols are used, fMRI can accurately delineate eloquent areas, thus providing an aid to medical decision regarding brain tumor surgery.
+
+- title: "Covariance-Controlled Adaptive {L}angevin Thermostat for Large-Scale {B}ayesian Sampling"
+  authors: [Xiaocheng Shang, Zhanxing Zhu, Benedict Leimkuhler, Amos Storkey]
+  type: conference
+  published: Advances in Neural Information Processing Systems (NeurIPS)
+  year: 2015
+  month: 12
+  url: https://arxiv.org/abs/1510.08692
+  abstract: >
+    Monte Carlo sampling for Bayesian posterior inference is a common approach used in machine learning. The Markov Chain Monte Carlo procedures that are used are often discrete-time analogues of associated stochastic differential equations (SDEs). These SDEs are guaranteed to leave invariant the required posterior distribution. An area of current research addresses the computational benefits of stochastic gradient methods in this setting. Existing techniques rely on estimating the variance or covariance of the subsampling error, and typically assume constant variance. In this article, we propose a covariance-controlled adaptive Langevin thermostat that can effectively dissipate parameter-dependent noise while maintaining a desired target distribution. The proposed method achieves a substantial speedup over popular alternative schemes for large-scale machine learning applications.
+
+- title: Adaptive Stochastic Primal-dual Coordinate Descent for Separable Saddle Point Problems
+  authors: [Zhanxing Zhu, Amos Storkey]
+  type: conference
+  published: Joint European Conference on Machine Learning and Knowledge Discovery in Databases
+  year: 2015
+  month: 8
+  url: https://arxiv.org/abs/1506.04093
+  abstract: >
+    We consider a generic convex-concave saddle point problem with a separable structure, a form that covers a wide-ranged machine learning applications. Under this problem structure, we follow the framework of primal-dual updates for saddle point problems, and incorporate stochastic block coordinate descent with adaptive stepsizes into this framework. We theoretically show that our proposal of adaptive stepsizes potentially achieves a sharper linear convergence rate compared with the existing methods. Additionally, since we can select “mini-batch” of block coordinates to update, our method is also amenable to parallel processing for large-scale data. We apply the proposed method to regularized empirical risk minimization and show that it performs comparably or, more often, better than state-of-the-art methods on both synthetic and real-world data sets.
+
+- title: Multi-period Trading Prediction Markets with Connections to Machine Learning
+  authors: [Jinli Hu, Amos Storkey]
+  type: conference
+  published: International Conference on Machine Learning (ICML)
+  year: 2014
+  month: 6
+  url: https://arxiv.org/abs/1403.0648
+  abstract: >
+    We present a new model for prediction markets, in which we use risk measures to model agents and introduce a market maker to describe the trading process. This specific choice on modelling tools brings us mathematical convenience. The analysis shows that the whole market effectively approaches a global objective, despite that the market is designed such that each agent only cares about its own goal. Additionally, the market dynamics provides a sensible algorithm for optimising the global objective. An intimate connection between machine learning and our markets is thus established, such that we could 1) analyse a market by applying machine learning methods to the global objective, and 2) solve machine learning problems by setting up and running certain markets.
+
+- title: "Training Deep Convolutional Neural Networks to Play {G}o"
+  authors: [Chris Clark, Amos Storkey]
+  type: conference
+  published: International Conference on Machine Learning (ICML)
+  year: 2015
+  month: 6
+  url: https://arxiv.org/abs/1412.3409
+  abstract: >
+    Mastering the game of Go has remained a long standing challenge to the field of AI. Modern computer Go systems rely on processing millions of possible future positions to play well, but intuitively a stronger and more 'humanlike' way to play the game would be to rely on pattern recognition abilities rather then brute force computation. Following this sentiment, we train deep convolutional neural networks to play Go by training them to predict the moves made by expert Go players. To solve this problem we introduce a number of novel techniques, including a method of tying weights in the network to 'hard code' symmetries that are expect to exist in the target function, and demonstrate in an ablation study they considerably improve performance. Our final networks are able to achieve move prediction accuracies of 41.1% and 44.4% on two different Go datasets, surpassing previous state of the art on this task by significant margins. Additionally, while previous move prediction programs have not yielded strong Go playing programs, we show that the networks trained in this work acquired high levels of skill. Our convolutional neural networks can consistently defeat the well known Go program GNU Go, indicating it is state of the art among programs that do not use Monte Carlo Tree Search. It is also able to win some games against state of the art Go playing program Fuego while using a fraction of the play time. This success at playing Go indicates high level principles of the game were learned.
+
+- title: "The Supervised Hierarchical {D}irichlet process"
+  authors: [Andrew M. Dai, Amos Storkey]
+  type: journal
+  published: IEEE Transactions on Pattern Analysis and Machine Intelligence (Special Issue on Bayesian Nonparametrics)
+  year: 2015
+  month: 4
+  volume: 37
+  number: 2
+  pages:  243-255
+  url: https://arxiv.org/abs/1412.5236
+  abstract: >
+    We propose the supervised hierarchical Dirichlet process (sHDP), a nonparametric generative model for the joint distribution of a group of observations and a response variable directly associated with that whole group. We compare the sHDP with another leading method for regression on grouped data, the supervised latent Dirichlet allocation (sLDA) model. We evaluate our method on two real-world classification problems and two real-world regression problems. Bayesian nonparametric regression models based on the Dirichlet process, such as the Dirichlet process-generalised linear models (DP-GLM) have previously been explored; these models allow flexibility in modelling nonlinear relationships. However, until now, Hierarchical Dirichlet Process (HDP) mixtures have not seen significant use in supervised problems with grouped data since a straightforward application of the HDP on the grouped data results in learnt clusters that are not predictive of the responses. The sHDP solves this problem by allowing for clusters to be learnt jointly from the group structure and from the label assigned to each group.
+
+- title: "Series Expansion Approximations of {B}rownian Motion for Non-Linear {K}alman Filtering of Diffusion Processes"
+  authors: [Simon Lyons, Simo Särkkä, Amos Storkey]
+  type: journal
+  published: IEEE Transactions on Signal Processing
+  year: 2014
+  month: 3
+  volume: 62
+  number: 6
+  pages: 1514-1524
+  url: https://arxiv.org/abs/1302.5324
+  abstract: >
+    In this paper, we describe a novel application of sigma-point methods to continuous-discrete filtering. In principle, the nonlinear continuous- discrete filtering problem can be solved exactly. In practice, the solution contains terms that are computationally intractible. Assumed density filtering methods attempt to match statistics of the filtering distribution to some set of more tractible probability distributions. We describe a novel method that decomposes the Brownian motion driving the signal in a generalised Fourier series, which is truncated after a number of terms. This approximation to Brownian can be described using a relatively small number of Fourier coefficients, and allows us to compute statistics of the filtering distribution with a single application of a sigma-point method. Assumed density filters that exist in the literature usually rely on discretisation of the signal dynamics followed by iterated application of a sigma point transform (or a limiting case thereof). Iterating the transform in this manner can lead to loss of information about the filtering distri- bution in highly nonlinear settings. We demonstrate that our method is better equipped to cope with such problems.
+
+- title: Isoelastic Agents and Wealth Updates in Machine Learning Markets
+  authors: [Amos Storkey, Jono Millin, Krzysztof Geras]
+  type: conference
+  published: International Conference on Machine Learning (ICML)
+  year: 2012
+  month: 6
+  url: https://arxiv.org/abs/1206.6443
+  abstract: >
+    Recently, prediction markets have shown considerable promise for developing flexible mechanisms for machine learning. In this paper, agents with isoelastic utilities are considered. It is shown that the costs associated with homogeneous markets of agents with isoelastic utilities produce equilibrium prices corresponding to alpha-mixtures, with a particular form of mixing component relating to each agent's wealth. We also demonstrate that wealth accumulation for logarithmic and other isoelastic agents (through payoffs on prediction of training targets) can implement both Bayesian model updates and mixture weight updates by imposing different market payoff structures. An iterative algorithm is given for market equilibrium computation. We demonstrate that inhomogeneous markets of agents with isoelastic utilities outperform state of the art aggregate classifiers such as random forests, as well as single classifiers (neural networks, decision trees) on a number of machine learning benchmarks, and show that isoelastic combination methods are generally better than their logarithmic counterparts.
+
+- title: A Topic Model for Melodic Sequences
+  authors: [Athina Spiliopoulou, Amos Storkey]
+  type: conference
+  published: International Conference on Machine Learning (ICML)
+  year: 2012
+  month: 6
+  url: https://arxiv.org/abs/1206.6441
+  abstract: >
+    We examine the problem of learning a probabilistic model for melody directly from musical sequences belonging to the same genre. This is a challenging task as one needs to capture not only the rich temporal structure evident in music, but also the complex statistical dependencies among different music components. To address this problem we introduce the Variable-gram Topic Model, which couples the latent topic formalism with a systematic model for contextual information. We evaluate the model on next-step prediction. Additionally, we present a novel way of model evaluation, where we directly compare model samples with data sequences using the Maximum Mean Discrepancy of string kernels, to assess how close is the model distribution to the data distribution. We show that the model has the highest performance under both evaluation measures when compared to LDA, the Topic Bigram and related non-topic models.
+
+- title: Comparing Probabilistic Models for Melodic Sequences
+  authors: [Athina Spiliopoulou, Amos Storkey]
+  type: conference
+  published: Proceedings of the ECML-PKDD
+  year: 2011
+  month: 9
+  url: https://arxiv.org/abs/1109.6804
+  abstract: >
+    Modelling the real world complexity of music is a challenge for machine learning. We address the task of modeling melodic sequences from the same music genre. We perform a comparative analysis of two probabilistic models; a Dirichlet Variable Length Markov Model (Dirichlet-VMM) and a Time Convolutional Restricted Boltzmann Machine (TC-RBM). We show that the TC-RBM learns descriptive music features, such as underlying chords and typical melody transitions and dynamics. We assess the models for future prediction and compare their performance to a VMM, which is the current state of the art in melody generation. We show that both models perform significantly better than the VMM, with the Dirichlet-VMM marginally outperforming the TC-RBM. Finally, we evaluate the short order statistics of the models, using the Kullback-Leibler divergence between test sequences and model samples, and show that our proposed methods match the statistics of the music genre significantly better than the VMM.
+
+- title: Machine Learning Markets
+  authors: [Amos Storkey]
+  type: conference
+  published: International Conference on Artificial Intelligence and Statistics (AISTATS)
+  year: 2011
+  month: 4
+  url: https://arxiv.org/abs/1106.4509
+  abstract: >
+    Prediction markets show considerable promise for developing flexible mechanisms for machine learning. Here, machine learning markets for multivariate systems are defined, and a utility-based framework is established for their analysis. This differs from the usual approach of defining static betting functions. It is shown that such markets can implement model combination methods used in machine learning, such as product of expert and mixture of expert approaches as equilibrium pricing models, by varying agent utility functions. They can also implement models composed of local potentials, and message passing methods. Prediction markets also allow for more flexible combinations, by combining multiple different utility functions. Conversely, the market mechanisms implement inference in the relevant probabilistic models. This means that market mechanism can be utilized for implementing parallelized model building and inference for probabilistic modelling.
+
+- title: "Dynamic Trees - A Structured Variational Method Giving Efficient Propagation Rules"
+  authors: [Amos Storkey]
+  type: conference
+  published: Conference on Uncertainty in Artificial Intelligence (UAI)
+  year: 2000
+  month: 6
+  url: https://arxiv.org/abs/1301.3895
+  abstract: >
+    Dynamic trees are mixtures of tree structured belief networks. They solve some of the problems of fixed tree networks at the cost of making exact inference intractable. For this reason approximate methods such as sampling or mean field approaches have been used. However, mean field approximations assume a factorized distribution over node states. Such a distribution seems unlickely in the posterior, as nodes are highly correlated in the prior. Here a structured variational approach is used, where the posterior distribution over the non-evidential nodes is itself approximated by a dynamic tree. It turns out that this form can be used tractably and efficiently. The result is a set of update rules which can propagate information through the network to obtain both a full variational approximation, and the relevant marginals. The progagtion rules are more efficient than the mean field approach and give noticeable quantitative and qualitative improvement in the inference. The marginals calculated give better approximations to the posterior than loopy propagation on a small toy problem.
+
+- title: "On the Relation Between the Sharpest Directions of {DNN} Loss and the {SGD} Step Length"
+  authors: [Stanisław Jastrzębski, Zachary Kenton, Nicolas Ballas, Asja Fischer, Yoshua Bengio, Amos Storkey]
+  year: 2019
+  type: conference
+  month: 5
+  published: International Conference on Learning Representations (ICLR)
+  url: https://arxiv.org/abs/1807.05031
+  project: understanding
+  abstract: >
+    Recent work has identified that using a high learning rate or a small batch size for Stochastic Gradient Descent (SGD) based training of deep neural networks encourages finding flatter minima of the training loss towards the end of training. Moreover, measures of the flatness of minima have been shown to correlate with good generalization performance. Extending this previous work, we investigate the loss curvature through the Hessian eigenvalue spectrum in the early phase of training and find an analogous bias: even at the beginning of training, a high learning rate or small batch size influences SGD to visit flatter loss regions. In addition, the evolution of the largest eigenvalues appears to always follow a similar pattern, with a fast increase in the early phase, and a decrease or stabilization thereafter, where the peak value is determined by the learning rate and batch size. Finally, we find that by altering the learning rate just in the direction of the eigenvectors associated with the largest eigenvalues, SGD can be steered towards regions which are an order of magnitude sharper but correspond to models with similar generalization, which suggests the curvature of the endpoint found by SGD is not predictive of its generalization properties.
+
+- title: "Three Factors Influencing Minima in {SGD}"
+  authors: [Stanisław Jastrzębski, Zachary Kenton, Devansh Arpit, Nicolas Ballas, Asja Fischer, Yoshua Bengio, Amos Storkey]
+  year: 2018
+  month: 10
+  type: conference
+  published: International Conference on Artificial Neural Networks (ICANN)
+  url: http://arxiv.org/abs/1711.04623
+  project: understanding
+  abstract: >
+    We investigate the dynamical and convergent properties of stochastic gradient descent (SGD) applied to Deep Neural Networks (DNNs). Characterizing the relation between learning rate, batch size and the properties of the final minima, such as width or generalization, remains an open question. In order to tackle this problem we investigate the previously proposed approximation of SGD by a stochastic differential equation (SDE). We theoretically argue that three factors - learning rate, batch size and gradient covariance - influence the minima found by SGD. In particular we find that the ratio of learning rate to batch size is a key determinant of SGD dynamics and of the width of the final minima, and that higher values of the ratio lead to wider minima and often better generalization. We confirm these findings experimentally. Further, we include experiments which show that learning rate schedules can be replaced with batch size schedules and that the ratio of learning rate to batch size is an important factor influencing the memorization process.
+
+- title: Data Augmentation Generative Adversarial Networks
+  authors: [Antreas Antoniou, Amos Storkey, Harrison Edwards]
+  year: 2017
+  month: 11
+  type: preprint
+  project: meta
+  url: https://arxiv.org/abs/1711.04340
+  abstract: >
+    Effective training of neural networks requires much data. In the low-data regime, parameters are underdetermined, and learnt networks generalise poorly. Data Augmentation alleviates this by using existing data more effectively. However standard data augmentation produces only limited plausible alternative data. Given there is potential to generate a much broader set of augmentations, we design and train a generative model to do data augmentation. The model, based on image conditional Generative Adversarial Networks, takes data from a source domain and learns to take any data item and generalise it to generate other within-class data items. As this generative process does not depend on the classes themselves, it can be applied to novel unseen classes of data. We show that a Data Augmentation Generative Adversarial Network (DAGAN) augments standard vanilla classifiers well. We also show a DAGAN can enhance few-shot learning systems such as Matching Networks. We demonstrate these approaches on Omniglot, on EMNIST having learnt the DAGAN on Omniglot, and VGG-Face data. In our experiments we can see over 13% increase in accuracy in the low-data regime experiments in Omniglot (from 69% to 82%), EMNIST (73.9% to 76\) and VGG-Face (4.5% to 12%); in Matching Networks for Omniglot we observe an increase of 0.5% (from 96.9% to 97.4%) and an increase of 1.8% in EMNIST (from 59.5% to 61.3%).
+  
+- title: "Moonshine: Distilling with Cheap Convolutions"
+  authors: [Elliot J. Crowley, Gavia Gray, Amos Storkey]
+  year: 2018
+  month: 12
+  type: conference
+  published: Advances in Neural Information Processing Systems (NeurIPS)
+  url: https://arxiv.org/abs/1711.02613
+  project: bonseyes
+  abstract: >
+    Many engineers wish to deploy modern neural networks in memory-limited settings; but the development of flexible methods for reducing memory use is in its infancy, and there is little knowledge of the resulting cost-benefit. We propose structural model distillation for memory reduction using a strategy that produces a student architecture that is a simple transformation of the teacher architecture: no redesign is needed, and the same hyperparameters can be used. Using attention transfer, we provide Pareto curves/tables for distillation of residual networks with four benchmark datasets, indicating the memory versus accuracy payoff. We show that substantial memory savings are possible with very little loss of accuracy, and confirm that distillation provides student network performance that is better than training that student architecture directly on data. 
+
+- title: "{B}ayesian Inference in Sparse {G}aussian Graphical Models"
+  authors: [Peter Orchard, Felix Agakov, Amos Storkey]
+  year: 2013
+  type: techreport
+  month: 9
+  number: 1
+  url: https://arxiv.org/abs/1309.7311
+  abstract: >
+    One of the fundamental tasks of science is to find explainable relationships between observed phenomena. One approach to this task that has received attention in recent years is based on probabilistic graphical modelling with sparsity constraints on model structures. In this paper, we describe two new approaches to Bayesian inference of sparse structures of Gaussian graphical models (GGMs). One is based on a simple modification of the cutting-edge block Gibbs sampler for sparse GGMs, which results in significant computational gains in high dimensions. The other method is based on a specific construction of the Hamiltonian Monte Carlo sampler, which results in further significant improvements. We compare our fully Bayesian approaches with the popular regularisation-based graphical LASSO, and demonstrate significant advantages of the Bayesian treatment under the same computing costs. We apply the methods to a broad range of simulated data sets, and a real-life financial data set.
+
+- title: "Characterising Across-Stack Optimisations for Deep Convolutional Neural Networks"
+  authors: [Jack Turner, José Cano, Valentin Radu, Elliot J. Crowley, Michael O'Boyle, Amos Storkey]
+  year: 2018
+  month: 9
+  type: conference
+  published: International Symposium on Workload Characterization (IISWC)
+  project: bonseyes
+  url: https://arxiv.org/abs/1809.07196
+  abstract: >
+    Convolutional Neural Networks (CNNs) are extremely computationally demanding, presenting a large barrier to their deployment on resource-constrained devices. Since such systems are where some of their most useful applications lie (e.g. obstacle detection for mobile robots, vision-based medical assistive technology), significant bodies of work from both machine learning and systems communities have attempted to provide optimisations that will make CNNs available to edge devices. In this paper we unify the two viewpoints in a Deep Learning Inference Stack and take an across-stack approach by implementing and evaluating the most common neural network compression techniques (weight pruning, channel pruning, and quantisation) and optimising their parallel execution with a range of programming approaches (OpenMP, OpenCL) and hardware architectures (CPU, GPU). We provide comprehensive Pareto curves to instruct trade-offs under constraints of accuracy, execution time, and memory space.
+    
+- title: Augmenting Image Classifiers using Data Augmentation Generative Adversarial Networks
+  authors: [Antreas Antoniou, Amos Storkey, Harrison Edwards]
+  year: 2018
+  month: 10
+  type: conference
+  published: International Conference on Artificial Neural Networks (ICANN)
+  publishurl: https://doi.org/10.1007/978-3-030-01424-7_58
+  url: https://www.bayeswatch.com/assets/papers/Augmenting_Image_Classifiers_using_Data_Augmentation_Generative_Adversarial_Networks.pdf
+  project: meta
+  abstract: >
+    Effective training of neural networks requires much data. In the low-data regime, parameters are underdetermined, and learnt networks generalise poorly. Data Augmentation alleviates this by using existing data more effectively, but standard data augmentation produces only limited plausible alternative data. Given the potential to generate a much broader set of augmentations, we design and train a generative model to do data augmentation. The model, based on image conditional Generative Adversarial Networks, uses data from a source domain and learns to take a data item and augment it by generating other within-class data items. As this generative process does not depend on the classes themselves, it can be applied to novel unseen classes. We demonstrate that a Data Augmentation Generative Adversarial Network (DAGAN) augments classifiers well on Omniglot, EMNIST and VGG-Face.
+
+- title: "Large-Scale Study of Curiosity-Driven Learning"
+  authors: [Yuri Burda, Harrison Edwards, Deepak Pathak, Amos Storkey, Trevor Darrell, Alexei A. Efros]
+  year: 2019
+  month: 5
+  type: conference
+  published: International Conference on Learning Representations (ICLR)
+  url: https://arxiv.org/abs/1808.04355
+  project: exploration
+  abstract: >
+    Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups.
+    
+- title: "{GINN}: Geometric Illustration of Neural Networks"
+  authors: [Luke N. Darlow, Amos Storkey]
+  year: 2018
+  month: 10
+  type: techreport
+  number: EDI-INF-ANC-1801
+  url: https://arxiv.org/abs/1810.01860
+  project: understanding
+  abstract: >
+    This informal technical report details the geometric illustration of decision boundaries for ReLU units in a three layer fully connected neural network. The network is designed and trained to predict pixel intensity from an (x, y) input location. The Geometric Illustration of Neural Networks (GINN) tool was built to visualise and track the points at which ReLU units switch from being active to off (or vice versa) as the network undergoes training. Several phenomenon were observed and are discussed herein.     
+
+- title: "{CINIC-10} is not {I}mage{N}et or {CIFAR-10}"
+  authors: [Luke N. Darlow, Elliot J. Crowley, Antreas Antoniou, Amos Storkey]
+  year: 2018
+  month: 10
+  type: techreport
+  number:  EDI-INF-ANC-1802
+  url: https://arxiv.org/abs/1810.03505
+  abstract: >
+    In this brief technical report we introduce the CINIC-10 dataset as a plug-in extended alternative for CIFAR-10. It was compiled by combining CIFAR-10 with images selected and downsampled from the ImageNet database. We present the approach to compiling the dataset, illustrate the example images for different classes, give pixel distributions for each part of the repository, and give some standard benchmarks for well known models. Details for download, usage, and compilation can be found in the associated github repository. 
+
+- title: "Pruning Neural Networks: Is it Time to Nip It in the Bud?"
+  authors: [Elliot J. Crowley, Jack Turner, Amos Storkey, Michael O'Boyle]
+  year: 2018
+  month: 12
+  type: workshop
+  published: Workshop on Compact Deep Neural Networks with industrial applications, NeurIPS 
+  url: https://arxiv.org/abs/1810.04622
+  project: bonseyes
+  abstract: >
+    Pruning is a popular technique for compressing a neural network: a large pre-trained network is fine-tuned while connections are successively removed. However, the value of pruning has largely evaded scrutiny. In this extended abstract, we examine residual networks obtained through Fisher-pruning and make two interesting observations. First, when time-constrained, it is better to train a simple, smaller network from scratch than prune a large network. Second, it is the architectures obtained through the pruning process --- not the learnt weights ---that prove valuable. Such architectures are powerful when trained from scratch. Furthermore, these architectures are easy to approximate without any further pruning: we can prune once and obtain a family of new, scalable network architectures for different memory requirements.   
+
+- title: "How to train your {MAML}"
+  authors: [Antreas Antoniou, Harrison Edwards, Amos Storkey]
+  year: 2019
+  month: 5
+  type: conference
+  url: https://arxiv.org/abs/1810.09502
+  project: meta
+  published: International Conference on Learning Representations (ICLR)
+  abstract: >
+    The field of few-shot learning has recently seen substantial advancements. Most of these advancements came from casting few-shot learning as a meta-learning problem. Model Agnostic Meta Learning or MAML is currently one of the best approaches for few-shot learning via meta-learning. MAML is simple, elegant and very powerful, however, it has a variety of issues, such as being very sensitive to neural network architectures, often leading to instability during training, requiring arduous hyperparameter searches to stabilize training and achieve high generalization and being very computationally expensive at both training and inference times. In this paper, we propose various modifications to MAML that not only stabilize the system, but also substantially improve the generalization performance, convergence speed and computational overhead of MAML, which we call MAML++. 
+
+
+- title: "Distilling with Performance Enhanced Students"
+  authors: [Jack Turner, Elliot J. Crowley, Valentin Radu, José Cano, Amos Storkey, Michael O'Boyle]
+  year: 2019
+  month: 3
+  type: preprint
+  url: https://arxiv.org/abs/1810.10460
+  project: bonseyes
+  abstract: >
+    The task of accelerating large neural networks on general purpose hardware has, in recent years, prompted the use of channel pruning to reduce network size. However, the efficacy of pruning based approaches has since been called into question. In this paper, we turn to distillation for model compression---specifically, attention transfer---and develop a simple method for discovering performance enhanced student networks. We combine channel saliency metrics with empirical observations of runtime performance to design more accurate networks for a given latency budget. We apply our methodology to residual and densely-connected networks, and show that we are able to find resource-efficient student networks on different hardware platforms while maintaining very high accuracy. These performance-enhanced student networks achieve up to 10% boosts in top-1 ImageNet accuracy over their channel-pruned counterparts for the same inference time. 
+
+- title: "Exploration by Random Network Distillation"
+  authors: [Yuri Burda, Harrison Edwards, Amos Storkey, Oleg Klimov]
+  year: 2019
+  month: 5
+  type: conference
+  url: https://arxiv.org/abs/1810.12894
+  project: exploration
+  published: International Conference on Learning Representations (ICLR)
+  abstract: >
+    We introduce an exploration bonus for deep reinforcement learning methods that is easy to implement and adds minimal overhead to the computation performed. The bonus is the error of a neural network predicting features of the observations given by a fixed randomly initialized neural network. We also introduce a method to flexibly combine intrinsic and extrinsic rewards. We find that the random network distillation (RND) bonus combined with this increased flexibility enables significant progress on several hard exploration Atari games. In particular we establish state of the art performance on Montezuma's Revenge, a game famously difficult for deep reinforcement learning methods. To the best of our knowledge, this is the first method that achieves better than average human performance on this game without using demonstrations or having access to the underlying state of the game, and occasionally completes the first level.
+
+- title: "Dilated {D}ense{N}ets for Relational Reasoning"
+  authors: [Antreas Antoniou, Agnieszka Słowik, Elliot J. Crowley, Amos Storkey]
+  year: 2018
+  month: 11
+  type: preprint
+  url: https://arxiv.org/abs/1811.00410
+  project: understanding
+  abstract: >
+    Despite their impressive performance in many tasks, deep neural networks often struggle at relational reasoning. This has recently been remedied with the introduction of a plug-in relational module that considers relations between pairs of objects. Unfortunately, this is combinatorially expensive. In this extended abstract, we show that a DenseNet incorporating dilated convolutions excels at relational reasoning on the Sort-of-CLEVR dataset, allowing us to forgo this relational module and its associated expense.
+
+- title: "Resource-Efficient Feature Gathering at Test Time"
+  authors: [Gavia Gray, Amos Storkey]
+  year: 2016
+  month: 12
+  type: workshop
+  published: Workshop on Reliable Machine Learning in the Wild, NeurIPS
+  url: /assets/papers/resource-efficient-wildml16.pdf
+  abstract: >
+    Data collection is costly. A machine learning model requires input data to produce an output prediction, but that input is often not cost-free to produce accurately. For example, in the social sciences, it may require collecting samples; in signal processing it may involve investing in expensive accurate sensors. The problem of allocating a budget across the collection of different input variables is largely over- looked in machine learning, but is important under real-world constraints. Given that the noise level on each input feature depends on how much resource has been spent gathering it, and given a fixed budget, we ask how to allocate that budget to maximise our expected reward. At the same time, the optimal model parameters will depend on the choice of budget allocation, and so searching the space of pos- sible budgets is costly. Using doubly stochastic gradient methods we propose a solution that allows expressive models and massive datasets, while still providing an interpretable budget allocation for feature gathering at test time.
+
+- title: "Assume, Augment and Learn: Unsupervised Few-Shot Meta-Learning via Random Labels and Data Augmentation"
+  authors: [Antreas Antoniou, Amos Storkey]
+  year: 2019
+  month: 2
+  type: preprint
+  url: https://arxiv.org/abs/1902.09884
+  abstract: >
+    The field of few-shot learning has been laboriously explored in the supervised setting, where per-class labels are available. On the other hand, the unsupervised few-shot learning setting, where no labels of any kind are required, has seen little investigation. We propose a method, named Assume, Augment and Learn or AAL, for generating few-shot tasks using unlabeled data. We randomly label a random subset of images from an unlabeled dataset to generate a support set. Then by applying data augmentation on the support set's images, and reusing the support set's labels, we obtain a target set. The resulting few-shot tasks can be used to train any standard meta-learning framework. Once trained, such a model, can be directly applied on small real-labeled datasets without any changes or fine-tuning required. In our experiments, the learned models achieve good generalization performance in a variety of established few-shot learning tasks on Omniglot and Mini-Imagenet.
+
+- title: "Zero-shot Knowledge Transfer via Adversarial Belief Matching"
+  authors: [Paul Micaelli, Amos Storkey]
+  year: 2019
+  month: 12
+  type: conference
+  published: Advances in Neural Information Processing Systems (NeurIPS)
+  url: https://arxiv.org/abs/1905.09768
+  abstract: >
+    Performing knowledge transfer from a large teacher network to a smaller student is a popular task in modern deep learning applications. However, due to growing dataset sizes and stricter privacy regulations, it is increasingly common not to have access to the data that was used to train the teacher. We propose a novel method which trains a student to match the predictions of its teacher without using any data or metadata. We achieve this by training an adversarial generator to search for images on which the student poorly matches the teacher, and then using them to train the student. Our resulting student closely approximates its teacher for simple datasets like SVHN, and on CIFAR10 we improve on the state- of-the-art for few-shot distillation (with 100 images per class), despite using no data. Finally, we also propose a metric to quantify the degree of belief matching between teacher and student in the vicinity of decision boundaries, and observe a significantly higher match between our zero-shot student and the teacher, than between a student distilled with real data and the teacher.
+
+- title: "Learning to Learn via Self-Critique"
+  authors: [Antreas Antoniou, Amos Storkey]
+  year: 2019
+  month: 12
+  type: conference
+  published: Advances in Neural Information Processing Systems (NeurIPS)
+  url: https://arxiv.org/abs/1905.10295
+  abstract: >
+    In few-shot learning, a machine learning system learns from a small set of labelled examples relating to a specific task, such that it can generalize to new examples of the same task. Given the limited availability of labelled examples in such tasks ,we wish to make use of all the information we can. Usually a model learns task-specific information from a small training-set (support-set) to predict on an unlabelled validation set (target-set). The target-set contains additional task-specific information which is not utilized by existing few-shot learning methods. Making use of the target-set examples via transductive learning requires approaches beyond the current methods; at inference time, the target-set contains only unlabelled input data-points, and so discriminative learning cannot be used. In this paper, we propose a framework called Self-Critique and Adaptor SCA, which learns to learn a label-free loss function, parameterized as a neural network. A base-model learns on a support-set using existing methods (e.g. stochastic gradient descent combined with the cross-entropy loss), and then is updated for the incoming target-task using the learnt loss function. This label-free loss function is itself optimized such that the learnt model achieves higher generalization performance. Experiments demonstrate that SCA offers substantially reduced error-rates compared to baselines which only adapt on the support-set, and results in state of the art benchmark performance on Mini-ImageNet and Caltech-UCSD Birds 200. 
+
+- title: "Separable Layers Enable Structured Efficient Linear Substitutions"
+  authors: [Gavia Gray, Elliot J. Crowley, Amos Storkey]
+  year: 2019
+  month: 6
+  type: preprint
+  url: https://arxiv.org/abs/1906.00859
+  abstract: >
+    In response to the development of recent efficient dense layers, this paper shows that something as simple as replacing linear components in pointwise convolutions with structured linear decompositions also produces substantial gains in the efficiency/accuracy tradeoff. Pointwise convolutions are fully connected layers and are thus prepared for replacement by structured transforms. Networks using such layers are able to learn the same tasks as those using standard convolutions, and provide Pareto-optimal benefits in efficiency/accuracy, both in terms of computation (mult-adds) and parameter count (and hence memory).
+
+
+- title: "{BlockSwap}: {F}isher-guided Block Substitution for Network Compression on a Budget"
+  authors: [Jack Turner, Elliot J. Crowley, Michael O'Boyle, Amos Storkey, Gavia Gray]
+  year: 2020
+  month: 4
+  type: conference
+  published: International Conference on Learning Representations (ICLR)
+  url: https://arxiv.org/abs/1906.04113
+  abstract: >
+    The desire to map neural networks to varying-capacity devices has led to the development of a wealth of compression techniques, many of which involve replacing standard convolutional blocks in a large network with cheap alternative blocks. However, not all blocks are created equally; for a required compute budget there may exist a potent combination of many different cheap blocks, though exhaustively searching for such a combination is prohibitively expensive. In this work, we develop BlockSwap: a fast algorithm for choosing networks with interleaved block types by passing a single minibatch of training data through randomly initialised networks and gauging their Fisher potential. These networks can then be used as students and distilled with the original large network as a teacher. We demonstrate the effectiveness of the chosen networks across CIFAR-10 and ImageNet for classification, and COCO for detection, and provide a comprehensive ablation study of our approach. BlockSwap quickly explores possible block configurations using a simple architecture ranking system, yielding highly competitive networks in orders of magnitude less time than most architecture search techniques (e.g. 8 minutes on a single CPU for CIFAR-10).
+
+
+- title: "Performance Aware Convolutional Neural Network Channel Pruning for Embedded {GPU}s"
+  authors: [Valentin Radu, Kuba Kaszyk, Yuan Wen, Jack Turner, José Cano, Elliot J. Crowley,Björn Franke, Amos Storkey, Michael O’Boyle]
+  year: 2019
+  month: 11
+  type: conference
+  published: International Symposium on Workload Characterization (IISWC)
+  project: bonseyes
+  url: https://arxiv.org/abs/2002.08697
+  abstract: >
+    Convolutional Neural Networks (CNN) are becoming a common presence in many applications and services, due to their superior recognition accuracy. They are increasingly being used on mobile devices, many times just by porting large models designed for server space, although several model compression techniques have been considered. One model compression technique intended to reduce computations is channel pruning. Mobile and embedded systems now have GPUs which are ideal for the parallel computations of neural networks and for their lower energy cost per operation. Specialized libraries perform these neural network computations through highly optimized routines. As we find in our experiments, these libraries are optimized for the most common network shapes, making uninstructed channel pruning inefficient. We evaluate higher level libraries, which analyze the input characteristics of a convolutional layer, based on which they produce optimized OpenCL (Arm Compute Library and TVM) and CUDA (cuDNN) code. However, in reality, these characteristics and subsequent choices intended for optimization can have the opposite effect. We show that a reduction in the number of convolutional channels, pruning 12% of the initial size, is in some cases detrimental to performance, leading to 2x slowdown. On the other hand, we also find examples where performance-aware pruning achieves the intended results, with performance speedups of 3x with cuDNN and above 10x with Arm Compute Library and TVM. Our findings expose the need for hardware-instructed neural network pruning.
+
+- title: "{DHOG}: Deep Hierarchical Object Grouping"
+  authors: [Luke N. Darlow, Amos Storkey]
+  year: 2020
+  month: 3
+  type: preprint
+  url: https://arxiv.org/abs/2003.08821
+  abstract: >
+    Recently, a number of competitive methods have tackled unsupervised representation learning by maximising the mutual information between the representations produced from augmentations. The resulting representations are then invariant to stochastic augmentation strategies, and can be used for downstream tasks such as clustering or classification. Yet data augmentations preserve many properties of an image and so there is potential for a suboptimal choice of representation that relies on matching easy-to-find features in the data. We demonstrate that greedy or local methods of maximising mutual information (such as stochastic gradient optimisation) discover local optima of the mutual information criterion; the resulting representations are also less-ideally suited to complex downstream tasks. Earlier work has not specifically identified or addressed this issue. We introduce deep hierarchical object grouping (DHOG) that computes a number of distinct discrete representations of images in a hierarchical order, eventually generating representations that better optimise the mutual information objective. We also find that these representations align better with the downstream task of grouping into underlying object classes. We tested DHOG on unsupervised clustering, which is a natural downstream test as the target representation is a discrete labelling of the data. We achieved new state-of-the-art results on the three main benchmarks without any prefiltering or Sobel-edge detection that proved necessary for many previous methods to work. We obtain accuracy improvements of: 4.3% on CIFAR-10, 1.5% on CIFAR-100-20, and 7.2% on SVHN.
+
+- title: "What Information Does a {R}es{N}et Compress?"
+  authors: [Luke N. Darlow, Amos Storkey]
+  year: 2019
+  month: 1
+  type: preprint
+  url: https://arxiv.org/abs/2003.06254
+  abstract: >
+    The information bottleneck principle (Shwartz-Ziv & Tishby, 2017) suggests that SGD-based training of deep neural networks results in optimally compressed hidden layers, from an information theoretic perspective. However, this claim was established on toy data. The goal of the work we present here is to test whether the information bottleneck principle is applicable to a realistic setting using a larger and deeper convolutional architecture, a ResNet model. We trained PixelCNN++ models as inverse representation decoders to measure the mutual information between hidden layers of a ResNet and input image data, when trained for (1) classification and (2) autoencoding. We find that two stages of learning happen for both training regimes, and that compression does occur, even for an autoencoder. Sampling images by conditioning on hidden layers' activations offers an intuitive visualisation to understand what a ResNets learns to forget.
+
+- title: "Comparing Recurrent and Convolutional Neural Networks for Predicting Wave Propagation"
+  authors: [Stathi Fotiadis, Eduardo Pignatelli, Mario Lino Valencia, Chris Cantwell, Amos Storkey, Anil A. Bharath]
+  year: 2020
+  month: 4
+  type: workshop
+  published: Workshop on Deep Learning and Differential Equations, ICLR
+  url: https://arxiv.org/abs/2002.08981
+  abstract: >
+    Dynamical systems can be modelled by partial differential equations and numerical computations are used everywhere in science and engineering. In this work, we investigate the performance of recurrent and convolutional deep neural network architectures to predict the surface waves. The system is governed by the Saint-Venant equations. We improve on the long-term prediction over previous methods while keeping the inference time at a fraction of numerical simulations. We also show that convolutional networks perform at least as well as recurrent networks in this task. Finally, we assess the generalisation capability of each network by extrapolating in longer time-frames and in different physical settings.
+    
+- title: "Meta-Learning in Neural Networks: A Survey"
+  authors: [Timothy Hospedales, Antreas Antoniou, Paul Micaelli, Amos Storkey]
+  year: 2021
+  month: 5
+  type: journal
+  accepted: 2021-04-27
+  published: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+  url: https://ieeexplore.ieee.org/document/9428530
+  abstract: >
+    The field of meta-learning, or learning-to-learn, has seen a dramatic rise in interest in recent years. Contrary to conventional approaches to AI where a given task is solved from scratch using a fixed learning algorithm, meta-learning aims to improve the learning algorithm itself, given the experience of multiple learning episodes. This paradigm provides an opportunity to tackle many of the conventional challenges of deep learning, including data and computation bottlenecks, as well as the fundamental issue of generalization. In this survey we describe the contemporary meta-learning landscape. We first discuss definitions of meta-learning and position it with respect to related fields, such as transfer learning, multi-task learning, and hyperparameter optimization. We then propose a new taxonomy that provides a more comprehensive breakdown of the space of meta-learning methods today. We survey promising applications and successes of meta-learning including few-shot learning, reinforcement learning and architecture search. Finally, we discuss outstanding challenges and promising areas for future research.
+
+- title: "Defining Benchmarks for Continual Few-Shot Learning"
+  authors: [Antreas Antoniou, Massimiliano Patacchiola, Mateusz Ochal, Amos Storkey]
+  year: 2020
+  month: 12
+  type: workshop
+  accepted: 2020-11-01
+  published: "NeurIPS MetaLearn 2020: Workshop on Meta-Learning"
+  url: https://arxiv.org/abs/2004.11967
+  abstract: >
+    Both few-shot and continual learning have seen substantial progress in the last years due to the introduction of proper benchmarks. That being said, the field has still to frame a suite of benchmarks for the highly desirable setting of continual few-shot learning, where the learner is presented a number of few-shot tasks, one after the other, and then asked to perform well on a validation set stemming from all previously seen tasks. Continual few-shot learning has a small computational footprint and is thus an excellent setting for efficient investigation and experimentation. In this paper we first define a theoretical framework for continual few-shot learning, taking into account recent literature, then we propose a range of flexible benchmarks that unify the evaluation criteria and allows exploring the problem from multiple perspectives. As part of the benchmark, we introduce a compact variant of ImageNet, called SlimageNet64, which retains all original 1000 classes but only contains 200 instances of each one (a total of 200K data-points) downscaled to 64 x 64 pixels. We provide baselines for the proposed benchmarks using a number of popular few-shot learning algorithms, as a result, exposing previously unknown strengths and weaknesses of those algorithms in continual and data-limited settings.
+
+- title: "Neural Architecture Search without Training"
+  authors: [Joseph Mellor, Jack Turner, Amos Storkey, Elliot J. Crowley]
+  year: 2021
+  month: 7
+  type: conference
+  accepted: 2021-05-08
+  published: International Conference on Machine Learning (ICML)
+  url: https://arxiv.org/abs/2006.04647
+  abstract: >
+    The time and effort involved in hand-designing deep neural networks is immense. This has prompted the development of Neural Architecture Search (NAS) techniques to automate this design. However, NAS algorithms tend to be slow and expensive; they need to train vast numbers of candidate networks to inform the search process. This could be alleviated if we could partially predict a network's trained accuracy from its initial state. In this work, we examine the overlap of activations between datapoints in untrained networks and motivate how this can give a measure which is usefully indicative of a network's trained performance. We incorporate this measure into a simple algorithm that allows us to search for powerful networks without any training in a matter of seconds on a single GPU, and verify its effectiveness on NAS-Bench-101, NAS-Bench-201, and Network Design Spaces. Finally, our approach can be readily combined with more expensive search methods; we examine a simple adaptation of regularised evolutionary search that outperforms its predecessor. Code for reproducing our experiments is available at https://github.com/BayesWatch/nas-without-training.
+    
+- title: "Optimizing Grouped Convolutions on Edge Devices"
+  authors: [Perry Gibson, José Cano, Jack Turner, Elliot J. Crowley, Michael O'Boyle, Amos Storkey]
+  year: 2020
+  month: 7
+  type: conference
+  accepted: 2020-05-20
+  published: International Conference on Application-specific Systems, Architectures and Processors (ASAP)
+  url: https://arxiv.org/abs/2006.09791
+  abstract: >
+    When deploying a deep neural network on constrained hardware, it is possible to replace the network's standard convolutions with grouped convolutions. This allows for substantial memory savings with minimal loss of accuracy. However, current implementations of grouped convolutions in modern deep learning frameworks are far from performing optimally in terms of speed. In this paper we propose Grouped Spatial Pack Convolutions (GSPC), a new implementation of grouped convolutions that outperforms existing solutions. We implement GSPC in TVM, which provides state-of-the-art performance on edge devices. We analyze a set of networks utilizing different types of grouped convolutions and evaluate their performance in terms of inference time on several edge devices. We observe that our new implementation scales well with the number of groups and provides the best inference times in all settings, improving the existing implementations of grouped convolutions in TVM, PyTorch and TensorFlow Lite by 3.4x, 8x and 4x on average respectively. Code is available at https://github.com/gecLAB/tvm-GSPC/.    
+
+- title: "Gradient-based Hyperparameter Optimization Over Long Horizons"
+  authors: [Paul Micaelli, Amos Storkey]
+  year: 2021
+  month: 12
+  type: conference
+  accepted: 2021-09-28
+  published: Advances in Neural Information Processing Systems
+  url: https://arxiv.org/abs/2007.07869
+  abstract: >
+    Gradient-based hyperparameter optimization has earned a widespread popularity in the context of few-shot meta-learning, but remains broadly impractical for tasks with long horizons (many gradient steps), due to memory scaling and gradient degradation issues. A common workaround is to learn hyperparameters online, but this introduces greediness which comes with a significant performance drop. We propose forward-mode differentiation with sharing (FDS), a simple and efficient algorithm which tackles memory scaling issues with forward-mode differentiation, and gradient degradation issues by sharing hyperparameters that are contiguous in time. We provide theoretical guarantees about the noise reduction properties of our algorithm, and demonstrate its efficiency empirically by differentiating through ∼104 gradient steps of unrolled optimization. We consider large hyperparameter search ranges on CIFAR-10 where we significantly outperform greedy gradient-based alternatives, while achieving ×20 speedups compared to the state-of-the-art black-box methods.
+    
+- title: "Latent Adversarial Debiasing: Mitigating Collider Bias in Deep Neural Networks"
+  authors: [Luke N. Darlow, Stanisław Jastrzębski, Amos Storkey]
+  year: 2020
+  month: 11
+  type: preprint
+  url: https://arxiv.org/abs/2011.11486
+  abstract: >
+    Collider bias is a harmful form of sample selection bias that neural networks are ill-equipped to handle. This bias manifests itself when the underlying causal signal is strongly correlated with other confounding signals due to the training data collection procedure. In the situation where the confounding signal is easy-to-learn, deep neural networks will latch onto this and the resulting model will generalise poorly to in-the-wild test scenarios. We argue herein that the cause of failure is a combination of the deep structure of neural networks and the greedy gradient-driven learning process used - one that prefers easy-to-compute signals when available. We show it is possible to mitigate against this by generating bias-decoupled training data using latent adversarial debiasing (LAD), even when the confounding signal is present in 100% of the training data. By training neural networks on these adversarial examples,we can improve their generalisation in collider bias settings. Experiments show state-of-the-art performance of LAD in label-free debiasing with gains of 76.12% on background coloured MNIST, 35.47% on fore-ground coloured MNIST, and 8.27% on corrupted CIFAR-10.
+
+- title: "Classification with a domain shift in medical imaging"
+  authors: [Alessandro Fontanella, Emma Pead, Tom MacGillivray, Miguel O. Bernabeu, Amos Storkey]
+  year: 2020
+  month: 12
+  type: workshop
+  accepted: 2020-11-01
+  published: "Med-NeurIPS 2020: Medical Imaging meets NeurIPS Workshop"
+  url: http://www.cse.cuhk.edu.hk/~qdou/public/medneurips2020/43_Classification_with_a_domain_shift_in_medical_imaging.pdf
+  abstract: >
+    Labelled medical imaging datasets are often small in size, but other unlabelled datasets with a domain shift may be available. In this work, we propose a method that is able to exploit these additional unlabelled data, possibly with a domain shift, to improve predictions on our labelled data. To this aim, we learn features in a self-supervised way while projecting all the data onto the same space to achieve better transfer. We first test our approach on natural images and verify its effectiveness on Office-31 data. Then, we apply it to retinal fundus datasets and through a series of experiments on age-related macular degeneration (AMD) and diabetic retinopathy (DR) grading, we show how our method improves the baseline of pre-training on ImageNet and fine-tuning on the labelled data in terms of classification accuracy, AUC and clinical interpretability.
+
+- title: "Constraint-Based Regularisation of Neural Networks"
+  authors: [Benedict Leimkuhler, Timothée Pouchon, Tiffany Vlaar, Amos Storkey]
+  year: 2020
+  month: 12
+  type: workshop
+  published: "NeurIPS OPT2020: 12th Annual Workshop on Optimization for Machine Learning"
+  url: http://homepages.inf.ed.ac.uk/amos/publications/LeimkuhlerPouchonVlaarStorkey2020ConstraintBasedRegularisatonNeurIPSWSOPT.pdf
+  abstract: >
+    We propose a method for efficiently incorporating constraints into a stochastic gradient Langevin framework for the training of deep neural networks. Constraints allow direct control of the parameter space of the model. Appropriately designed, they reduce the vanishing/exploding gradient problem, control weight magnitudes and stabilize deep neural networks and thus improve the robustness of training algorithms and generalization capabilities of the trained neural network. We present examples of constrained training methods motivated by orthogonality preservation for weight matrices and explicit weight normalizations. We describe the methods in the overdamped formulation of Langevin dynamics and the underdamped form, in which momenta help to improve sampling efficiency. Our methods see performance improvements on image classification tasks.
+
+- title: "Bayesian Meta-Learning for the Few-Shot Setting via Deep Kernels"
+  authors: [Massimiliano Patacchiola, Jack Turner, Elliot J. Crowley, Michael O'Boyle, Amos Storkey]
+  year: 2020
+  month: 12
+  type: conference
+  accepted: 2020-09-25
+  published: Advances in Neural Information Processing Systems (NeurIPS)
+  url: https://arxiv.org/abs/1910.05199
+  abstract: >
+    Recently, different machine learning methods have been introduced to tackle the challenging few-shot learning scenario that is, learning from a small labeled dataset related to a specific task. Common approaches have taken the form of meta-learning: learning to learn on the new problem given the old. Following the recognition that meta-learning is implementing learning in a multi-level model, we present a Bayesian treatment for the meta-learning inner loop through the use of deep kernels. As a result we can learn a kernel that transfers to new tasks; we call this Deep Kernel Transfer (DKT). This approach has many advantages: is straightforward to implement as a single optimizer, provides uncertainty quantification, and does not require estimation of task-specific parameters. We empirically demonstrate that DKT outperforms several state-of-the-art algorithms in few-shot classification, and is the state of the art for cross-domain adaptation and regression. We conclude that complex meta-learning routines can be replaced by a simpler Bayesian model without loss of accuracy.
+    
+- title: "Self-Supervised Relational Reasoning for Representation Learning"
+  authors: [Massimiliano Patacchiola, Amos Storkey]
+  year: 2020
+  month: 12
+  type: conference
+  appeared: 2020-09-25
+  accepted: 2020-09-25
+  published: Advances in Neural Information Processing Systems (NeurIPS)
+  url: https://arxiv.org/abs/2006.05849
+  abstract: >
+    In self-supervised learning, a system is tasked with achieving a surrogate objective by defining alternative targets on a set of unlabeled data. The aim is to build useful representations that can be used in downstream tasks, without costly manual annotation. In this work, we propose a novel self-supervised formulation of relational reasoning that allows a learner to bootstrap a signal from information implicit in unlabeled data. Training a relation head to discriminate how entities relate to themselves (intra-reasoning) and other entities (inter-reasoning), results in rich and descriptive representations in the underlying neural network backbone, which can be used in downstream tasks such as classification and image retrieval. We evaluate the proposed method following a rigorous experimental procedure, using standard datasets, protocols, and backbones. Self-supervised relational reasoning outperforms the best competitor in all conditions by an average 14% in accuracy, and the most recent state-of-the-art model by 3%. We link the effectiveness of the method to the maximization of a Bernoulli log-likelihood, which can be considered as a proxy for maximizing the mutual information, resulting in a more efficient objective with respect to the commonly used contrastive losses.
+
+- title: "Neural Architecture Search as Program Transformation Exploration"
+  authors: [Jack Turner, Elliot J. Crowley, Michael O'Boyle]
+  year: 2021
+  month: 4
+  type: conference
+  appeared: 2020-11-19
+  accepted: 2020-11-19
+  published: International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)
+  url: https://arxiv.org/abs/2102.06599
+  abstract: >
+    Improving the performance of deep neural networks (DNNs) is important to both the compiler and neural architecture search (NAS) communities. Compilers apply program transformations in order to exploit hardware parallelism and memory hierarchy. However, legality concerns mean they fail to exploit the natural robustness of neural networks. In contrast, NAS techniques mutate networks by operations such as the grouping or bottlenecking of convolutions, exploiting the resilience of DNNs. In this work, we express such neural architecture operations as program transformations whose legality depends on a notion of representational capacity. This allows them to be combined with existing transformations into a unified optimization framework. This unification allows us to express existing NAS operations as combinations of simpler transformations. Crucially, it allows us to generate and explore new tensor convolutions. We prototyped the combined framework in TVM and were able to find optimizations across different DNNs, that significantly reduce inference time - over 3 times in the majority of cases.
+    
+- title: "Few-Shot Learning with Class Imbalance"
+  authors: [Mateusz Ochal, Massimiliano Patacchiola, Amos Storkey, Jose Vazquez, Sen Wang]
+  year: 2021
+  month: 1
+  appeared: 2021-01-07
+  type: preprint
+  url: https://arxiv.org/abs/2101.02523
+  abstract: >
+    Few-shot learning aims to train models on a limited number of labeled samples given in a support set in order to generalize to unseen samples from a query set. In the standard setup, the support set contains an equal amount of data points for each class. However, this assumption overlooks many practical considerations arising from the dynamic nature of the real world, such as class-imbalance. In this paper, we present a detailed study of few-shot class-imbalance along three axes: meta-dataset vs. task imbalance, effect of different imbalance distributions (linear, step, random), and effect of rebalancing techniques. We extensively compare over 10 state-of-the-art few-shot learning and meta-learning methods using unbalanced tasks and meta-datasets. Our analysis using Mini-ImageNet reveals that 1) compared to the balanced task, the performances on class-imbalance tasks counterparts always drop, by up to 18.0% for optimization-based methods, and up to 8.4 for metric-based methods, 2) contrary to popular belief, meta-learning algorithms, such as MAML, do not automatically learn to balance by being exposed to imbalanced tasks during (meta-)training time, 3) strategies used to mitigate imbalance in supervised learning, such as oversampling, can offer a stronger solution to the class imbalance problem, 4) the effect of imbalance at the meta-dataset level is less significant than the effect at the task level with similar imbalance magnitude. The code to reproduce the experiments is released under an open-source license.
+
+- title: "How Sensitive are Meta-Learners to Dataset Imbalance?"
+  authors: [Mateusz Ochal, Massimiliano Patacchiola, Amos Storkey, Jose Vazquez, Sen Wang]
+  year: 2021
+  month: 5
+  appeared: 2021-04-12
+  type: workshop
+  url: https://arxiv.org/abs/2104.05344
+  published: "ICLR Learning to Learn Workshop"
+  abstract: >
+    Meta-Learning (ML) has proven to be a useful tool for training Few-Shot Learning (FSL) algorithms by exposure to batches of tasks sampled from a meta-dataset. However, the standard training procedure overlooks the dynamic nature of the real-world where object classes are likely to occur at different frequencies. While it is generally understood that imbalanced tasks harm the performance of supervised methods, there is no significant research examining the impact of imbalanced meta-datasets on the FSL evaluation task. This study exposes the magnitude and extent of this problem. Our results show that ML methods are more robust against meta-dataset imbalance than imbalance at the task-level with a similar imbalance ratio (ρ<20), with the effect holding even in long-tail datasets under a larger imbalance (ρ=65). Overall, these results highlight an implicit strength of ML algorithms, capable of learning generalizable features under dataset imbalance and domain-shift. The code to reproduce the experiments is released under an open-source license.
+
+- title: "Substituting Convolutions for Neural Network Compression"
+  authors: [Elliot J. Crowley, Gavia Gray, Jack Turner, Amos Storkey]
+  year: 2021
+  month: 5
+  type: journal
+  accepted: 2021-05-20
+  published: "IEEE Access"
+  url: https://ieeexplore.ieee.org/document/9446890
+  abstract: >
+    Many practitioners would like to deploy deep, convolutional neural networks in memory-limited scenarios, e.g. on an embedded device. However, with an abundance of compression techniques available it is not obvious how to proceed; many bring with them additional hyperparameter tuning, and are specific to particular network types. In this paper, we propose a simple compression technique that is general, easy to apply, and requires minimal tuning. Given a large, trained network, we propose (i) substituting its expensive convolutions with cheap alternatives, leaving the overall architecture unchanged; (ii) treating this new network as a student and training it with the original as a teacher through distillation. We demonstrate this approach separately for (i) networks predominantly consisting of full 3×3 convolutions and (ii) 1×1 or pointwise convolutions which together make up the vast majority of contemporary networks. We are able to leverage a number of methods that have been developed as efficient alternatives to fully-connected layers for pointwise substitution, allowing us provide Pareto-optimal benefits in efficiency/accuracy.
+
+- title: "Better Training using Weight-Constrained Stochastic Dynamics"
+  authors: [Benedict Leimkuhler, Tiffany Vlaar, Timothée Pouchon, Amos Storkey]
+  year: 2021
+  month: 7
+  type: conference
+  accepted: 2021-05-08
+  published: International Conference on Machine Learning (ICML)
+  url: https://arxiv.org/abs/2106.10704
+  abstract: >
+    We employ constraints to control the parameter space of deep neural networks throughout training. The use of customized, appropriately designed constraints can reduce the vanishing/exploding gradients problem, improve smoothness of classification boundaries, control weight magnitudes and stabilize deep neural networks, and thus enhance the robustness of training algorithms and the generalization capabilities of neural networks. We provide a general approach to efficiently incorporate constraints into a stochastic gradient Langevin framework, allowing enhanced exploration of the loss landscape. We also present specific examples of constrained training methods motivated by orthogonality preservation for weight matrices and explicit weight normalizations. Discretization schemes are provided both for the overdamped formulation of Langevin dynamics and the underdamped form, in which momenta further improve sampling efficiency. These optimization schemes can be used directly, without needing to adapt neural network architecture design choices or to modify the objective with regularization terms, and see performance improvements in classification tasks.    
+
+- title: "Contrastive Object-level Pre-training with Spatial Noise Curriculum Learning"
+  authors: [Chenhongyi Yang, Lichao Huang, Elliot J. Crowley]
+  year: 2021
+  month: 11
+  type: preprint
+  url: https://arxiv.org/abs/2111.13651
+  abstract: >
+    The goal of contrastive learning based pre-training is to leverage large quantities of unlabeled data to produce a model that can be readily adapted downstream. Current approaches revolve around solving an image discrimination task: given an anchor image, an augmented counterpart of that image, and some other images, the model must produce representations such that the distance between the anchor and its counterpart is small, and the distances between the anchor and the other images are large. There are two significant problems with this approach: (i) by contrasting representations at the image-level, it is hard to generate detailed object-sensitive features that are beneficial to downstream object-level tasks such as instance segmentation; (ii) the augmentation strategy of producing an augmented counterpart is fixed, making learning less effective at the later stages of pre-training. In this work, we introduce Curricular Contrastive Object-level Pre-training (CCOP) to tackle these problems: (i) we use selective search to find rough object regions and use them to build an inter-image object-level contrastive loss and an intra-image object-level discrimination loss into our pre-training objective; (ii) we present a curriculum learning mechanism that adaptively augments the generated regions, which allows the model to consistently acquire a useful learning signal, even in the later stages of pre-training. Our experiments show that our approach improves on the MoCo v2 baseline by a large margin on multiple object-level tasks when pre-training on multi-object scene image datasets. Code is available at https://github.com/ChenhongyiYang/CCOP.
+
+- title: "Hamiltonian Latent Operators for content and motion disentanglement in image sequences"
+  authors: [Asif Khan, Amos Storkey]
+  year: 2022
+  month: 12
+  type: conference
+  url: https://arxiv.org/abs/2112.01641
+  published: "Advances in Neural Information Processing Systems"
+  abstract: >
+    We present a deep latent variable model for high dimensional sequential data. Our model factorises the latent space into content and motion variables. To model the diverse dynamics, we split the motion space into subspaces, and introduce a unique Hamiltonian operator for each subspace. The Hamiltonian formulation provides reversible dynamics that learn to constrain the motion path to conserve invariant properties. The explicit split of the motion space decomposes the Hamiltonian into symmetry groups and gives long-term separability of the dynamics. This split also means representations can be learnt that are easy to interpret and control. We demonstrate the utility of our model for swapping the motion of two videos, generating sequences of various actions from a given image and unconditional sequence generation.
+
+- title: "Global explainability in aligned image modalities"
+  authors: [Justin Engelmann, Amos Storkey, Miguel O. Bernabeu]
+  year: 2021
+  month: 12
+  type: workshop
+  published: "Interpretable Machine Learning in Healthcare at ICML 2022"
+  url: https://arxiv.org/abs/2112.09591
+  abstract: >
+    Deep learning (DL) models are very effective on many computer vision problems and increasingly used in critical applications. They are also inherently black box. A number of methods exist to generate image-wise explanations that allow practitioners to understand and verify model predictions for a given image. Beyond that, it would be desirable to validate that a DL model \textit{generally} works in a sensible way, i.e. consistent with domain knowledge and not relying on undesirable data artefacts. For this purpose, the model needs to be explained globally. In this work, we focus on image modalities that are naturally aligned such that each pixel position represents a similar relative position on the imaged object, as is common in medical imaging. We propose the pixel-wise aggregation of image-wise explanations as a simple method to obtain label-wise and overall global explanations. These can then be used for model validation, knowledge discovery, and as an efficient way to communicate qualitative conclusions drawn from inspecting image-wise explanations. We further propose Progressive Erasing Plus Progressive Restoration (PEPPR) as a method to quantitatively validate that these global explanations are faithful to how the model makes its predictions. We then apply these methods to ultra-widefield retinal images, a naturally aligned modality. We find that the global explanations are consistent with domain knowledge and faithfully reflect the model's workings.
+
+- title: "Deep attention super-resolution of brain magnetic resonance images acquired under clinical protocols"
+  authors: [Bryan M Li, Leonardo V Castorina, Maria Del Carmen Valdés Hernández, Una Clancy, Stewart J Wiseman, Eleni Sakka, Amos J Storkey, Daniela Jaime Garcia, Yajun Cheng, Fergus Doubal, Michael T Thrippleton, Michael Stringer, Joanna M Wardlaw]
+  year: 2022
+  month: 8
+  type: journal
+  url: https://www.medrxiv.org/content/10.1101/2022.01.24.22269144v1
+  published: Front Comput Neurosci
+  abstract: >
+    Vast quantities of Magnetic Resonance Images (MRI) are routinely acquired in clinical practice but, to speed up acquisition, these scans are typically of a quality that is sufficient for clinical diagnosis but sub-optimal for large-scale precision medicine, computational diagnostics, and large-scale neuroimaging research. Here, we present a critic-guided framework to upsample low-resolution (often 2D) MRI scans. In addition, we incorporated feature-importance and self-attention methods into our model to improve the interpretability of this work. We evaluate our framework on paired low- and high-resolution brain MRI structural full scans (i.e. T1-, T2-weighted and FLAIR sequences are simultaneously input) obtained in clinical and research settings from scanners manufactured by Siemens, Phillips and GE. We showed that the upsampled MRIs are qualitatively faithful to the ground-truth high-quality scans (PSNR = 35.39; MAE = 3.78E −3; NMSE = 4.32E −10; SSIM = 0.9852; mean normal-appearing grey/white matter ratio intensity differences ranging from 0.0363 to 0.0784 for FLAIR, from 0.0010 to 0.0138 for T1-weighted and from 0.0156 to 0.074 for T2-weighted sequences). The automatic raw segmentations of tissues and lesions using the super-resolved images have fewer false positives and higher accuracy than those obtained from interpolated images in protocols represented with more than three sets in the training sample, making our approach a strong candidate for practical application in clinical research.
+   
+- title: "Prediction-Guided Distillation for Dense Object Detection"
+  authors: [Chenhongyi Yang, Mateusz Ochal, Amos Storkey, Elliot J. Crowley]
+  year: 2022
+  month: 10
+  type: conference
+  published: European Conference on Computer Vision
+  url: https://arxiv.org/abs/2203.05469
+  abstract: >
+    Real-world object detection models should be cheap and accurate. Knowledge distillation (KD) can boost the accuracy of a small, cheap detection model by leveraging useful information from a larger teacher model. However, a key challenge is identifying the most informative features produced by the teacher for distillation. In this work, we show that only a very small fraction of features within a ground-truth bounding box are responsible for a teacher's high detection performance. Based on this, we propose Prediction-Guided Distillation (PGD), which focuses distillation on these key predictive regions of the teacher and yields considerable gains in performance over many existing KD baselines. In addition, we propose an adaptive weighting scheme over the key regions to smooth out their influence and achieve even better performance. Our proposed approach outperforms current state-of-the-art KD baselines on a variety of advanced one-stage detection architectures. Specifically, on the COCO dataset, our method achieves between +3.1% and +4.6% AP improvement using ResNet-101 and ResNet-50 as the teacher and student backbones, respectively. On the CrowdHuman dataset, we achieve +3.2% and +2.0% improvements in MR and AP, also using these backbones. Our code is available at https://github.com/ChenhongyiYang/PGD.
+   
+- title: "Detection of multiple retinal diseases in ultra-widefield fundus images using deep learning: data-driven identification of relevant regions"
+  authors: [Justin Engelmann, Alice D. McTrusty, Ian J. C. MacCormick, Emma Pead, Amos Storkey, Miguel O. Bernabeu]
+  year: 2022
+  month: 12
+  type: journal
+  published: Nature Machine Intelligence
+  url: https://arxiv.org/abs/2203.06113
+  abstract: >
+    Ultra-widefield (UWF) imaging is a promising modality that captures a larger retinal field of view compared to traditional fundus photography. Previous studies showed that deep learning (DL) models are effective for detecting retinal disease in UWF images, but primarily considered individual diseases under less-than-realistic conditions (excluding images with other diseases, artefacts, comorbidities, or borderline cases; and balancing healthy and diseased images) and did not systematically investigate which regions of the UWF images are relevant for disease detection. We first improve on the state of the field by proposing a DL model that can recognise multiple retinal diseases under more realistic conditions. We then use global explainability methods to identify which regions of the UWF images the model generally attends to. Our model performs very well, separating between healthy and diseased retinas with an area under the curve (AUC) of 0.9206 on an internal test set, and an AUC of 0.9841 on a challenging, external test set. When diagnosing specific diseases, the model attends to regions where we would expect those diseases to occur. We further identify the posterior pole as the most important region in a purely data-driven fashion. Surprisingly, 10% of the image around the posterior pole is sufficient for achieving comparable performance to having the full images available.    
+
+- title: "Learning Task Embeddings for Teamwork Adaptation in Multi-Agent Reinforcement Learning"
+  authors: [Lukas Schäfer, Filippos Christianos, Amos Storkey, Stefano V. Albrecht]
+  year: 2022
+  month: 7
+  type: preprint
+  url: https://arxiv.org/abs/2207.02249
+  abstract: >
+    Successful deployment of multi-agent reinforcement learning often requires agents to adapt their behaviour. In this work, we discuss the problem of teamwork adaptation in which a team of agents needs to adapt their policies to solve novel tasks with limited fine-tuning. Motivated by the intuition that agents need to be able to identify and distinguish tasks in order to adapt their behaviour to the current task, we propose to learn multi-agent task embeddings (MATE). These task embeddings are trained using an encoder-decoder architecture optimised for reconstruction of the transition and reward functions which uniquely identify tasks. We show that a team of agents is able to adapt to novel tasks when provided with task embeddings. We propose three MATE training paradigms: independent MATE, centralised MATE, and mixed MATE which vary in the information used for the task encoding. We show that the embeddings learned by MATE identify tasks and provide useful information which agents leverage during adaptation to novel tasks.
+    
+- title: "Robust and efficient computation of retinal fractal dimension through deep approximation"
+  authors: [Justin Engelmann, Ana Villaplana-Velasco, Amos Storkey, Miguel O. Bernabeu]
+  year: 2022
+  month: 7
+  type: workshop
+  published: "9th MICCAI Workshop on Ophthalmic Medical Image Analysis at MICCAI 2022"
+  url: https://arxiv.org/abs/2207.05757
+  abstract: >
+    A retinal trait, or phenotype, summarises a specific aspect of a retinal image in a single number. This can then be used for further analyses, e.g. with statistical methods. However, reducing an aspect of a complex image to a single, meaningful number is challenging. Thus, methods for calculating retinal traits tend to be complex, multi-step pipelines that can only be applied to high quality images. This means that researchers often have to discard substantial portions of the available data. We hypothesise that such pipelines can be approximated with a single, simpler step that can be made robust to common quality issues. We propose Deep Approximation of Retinal Traits (DART) where a deep neural network is used predict the output of an existing pipeline on high quality images from synthetically degraded versions of these images. We demonstrate DART on retinal Fractal Dimension (FD) calculated by VAMPIRE, using retinal images from UK Biobank that previous work identified as high quality. Our method shows very high agreement with FD VAMPIRE on unseen test images (Pearson r=0.9572). Even when those images are severely degraded, DART can still recover an FD estimate that shows good agreement with FD VAMPIRE obtained from the original images (Pearson r=0.8817). This suggests that our method could enable researchers to discard fewer images in the future. Our method can compute FD for over 1,000img/s using a single GPU. We consider these to be very encouraging initial results and hope to develop this approach into a useful tool for retinal analysis.
+
+- title: "Adversarial robustness of β−VAE through the lens of local geometry"
+  authors: [Asif Khan, Amos Storkey]
+  year: 2023
+  month: 4
+  type: conference
+  published: "International Conference on Artificial Intelligence and Statistics (AISTATS)"
+  url: https://arxiv.org/abs/2208.03923
+  abstract: >
+    Variational autoencoders (VAEs) are susceptible to adversarial attacks. An adversary can find a small perturbation in the input sample to change its latent encoding non-smoothly, thereby compromising the reconstruction. A known reason for such vulnerability is the latent space distortions arising from a mismatch between approximated latent posterior and a prior distribution. Consequently, a slight change in the inputs leads to a significant change in the latent space encodings. This paper demonstrates that the sensitivity around a data point is due to a directional bias of a stochastic pullback metric tensor induced by the encoder network. The pullback metric tensor measures the infinitesimal volume change from input to latent space. Thus, it can be viewed as a lens to analyse the effect of small changes in the input leading to distortions in the latent space. We propose robustness evaluation scores using the eigenspectrum of a pullback metric. Moreover, we empirically show that the scores correlate with the robustness parameter β of the β−VAE.
+
+- title: "Plug and Play Active Learning for Object Detection"
+  authors: [Chenhongyi Yang, Lichao Huang, Elliot J. Crowley]
+  year: 2024
+  month: 6
+  type: conference
+  published: To appear at the IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)
+  url: https://arxiv.org/abs/2211.11612
+  abstract: >
+    Annotating data for supervised learning is expensive and tedious, and we want to do as little of it as possible. To make the most of a given "annotation budget" we can turn to active learning (AL) which aims to identify the most informative samples in a dataset for annotation. Active learning algorithms are typically uncertainty-based or diversity-based. Both have seen success in image classification, but fall short when it comes to object detection. We hypothesise that this is because: (1) it is difficult to quantify uncertainty for object detection as it consists of both localisation and classification, where some classes are harder to localise, and others are harder to classify; (2) it is difficult to measure similarities for diversity-based AL when images contain different numbers of objects. We propose a two-stage active learning algorithm Plug and Play Active Learning (PPAL) that overcomes these difficulties. It consists of (1) Difficulty Calibrated Uncertainty Sampling, in which we used a category-wise difficulty coefficient that takes both classification and localisation into account to re-weight object uncertainties for uncertainty-based sampling; (2) Category Conditioned Matching Similarity to compute the similarities of multi-instance images as ensembles of their instance similarities. PPAL is highly generalisable because it makes no change to model architectures or detector training pipelines. We benchmark PPAL on the MS-COCO and Pascal VOC datasets using different detector architectures and show that our method outperforms the prior state-of-the-art. Code is available at https://github.com/ChenhongyiYang/PPAL 
+
+- title: "Can deep learning on retinal images augment known risk factors for cardiovascular disease prediction in diabetes? A prospective cohort study from the national screening programme in Scotland"
+  authors: [Joseph Mellor, Wenhua Jiang, Alan Fleming, Stuart McGurnaghan, Luke Blackbourn, Caroline Styles, Amos J Storkey, Paul M McKeigue, Helen M Colhoun, Scottish Diabetes Research Network Epidemiology Group]
+  year: 2023
+  month: 4
+  type: journal
+  published: International Journal of Medical Informatics
+  url: https://pubmed.ncbi.nlm.nih.gov/37167840/
+  abstract: >
+    "Aims: This study's objective was to evaluate whether deep learning (DL) on retinal photographs from a diabetic retinopathy screening programme improve prediction of incident cardiovascular disease (CVD). Methods: DL models were trained to jointly predict future CVD risk and CVD risk factors and used to output a DL score. Poisson regression models including clinical risk factors with and without a DL score were fitted to study cohorts with 2,072 and 38,730 incident CVD events in type 1 (T1DM) and type 2 diabetes (T2DM) respectively. Results: DL scores were independently associated with incident CVD with adjusted standardised incidence rate ratios of 1.14 (P = 3 × 10-04 95 % CI (1.06, 1.23)) and 1.16 (P = 4 × 10-33 95 % CI (1.13, 1.18)) in T1DM and T2DM cohorts respectively. The differences in predictive performance between models with and without a DL score were statistically significant (differences in test log-likelihood 6.7 and 51.1 natural log units) but the increments in C-statistics from 0.820 to 0.822 and from 0.709 to 0.711 for T1DM and T2DM respectively, were small. Conclusions: These results show that in people with diabetes, retinal photographs contain information on future CVD risk. However for this to contribute appreciably to clinical prediction of CVD further approaches, including exploitation of serial images, need to be evaluated."
+
+- title: "GPViT: A High Resolution Non-Hierarchical Vision Transformer with Group Propagation"
+  authors: [Chenhongyi Yang, Jiarui Xu, Shalini De Mello, Elliot J. Crowley, Xiaolong Wang]
+  year: 2023
+  month: 5
+  type: conference
+  published: International Conference on Learning Representations (ICLR)
+  url: https://arxiv.org/abs/2212.06795
+  abstract: >
+    We present the Group Propagation Vision Transformer (GPViT): a novel nonhierarchical (i.e. non-pyramidal) transformer model designed for general visual recognition with high-resolution features. High-resolution features (or tokens) are a natural fit for tasks that involve perceiving fine-grained details such as detection and segmentation, but exchanging global information between these features is expensive in memory and computation because of the way self-attention scales. We provide a highly efficient alternative Group Propagation Block (GP Block) to exchange global information. In each GP Block, features are first grouped together by a fixed number of learnable group tokens; we then perform Group Propagation where global information is exchanged between the grouped features; finally, global information in the updated grouped features is returned back to the image features through a transformer decoder. We evaluate GPViT on a variety of visual recognition tasks including image classification, semantic segmentation, object detection, and instance segmentation. Our method achieves significant performance gains over previous works across all tasks, especially on tasks that require high-resolution outputs, for example, our GPViT-L3 outperforms Swin Transformer-B by 2.0 mIoU on ADE20K semantic segmentation with only half as many parameters. Code and pre-trained models are available at https://github.com/ChenhongyiYang/GPViT
+
+- title: "Contrastive Meta-Learning for Partially Observable Few-Shot Learning"
+  authors: [Adam Jelley, Amos Storkey, Antreas Antoniou, Sam Devlin]
+  year: 2023
+  month: 5
+  type: conference
+  published: International Conference on Learning Representations (ICLR)
+  url: https://arxiv.org/abs/2301.13136
+  abstract: >
+    Many contrastive and meta-learning approaches learn representations by identifying common features in multiple views. However, the formalism for these approaches generally assumes features to be shared across views to be captured coherently. We consider the problem of learning a unified representation from partial observations, where useful features may be present in only some of the views. We approach this through a probabilistic formalism enabling views to map to representations with different levels of uncertainty in different components; these views can then be integrated with one another through marginalisation over that uncertainty. Our approach, Partial Observation Experts Modelling (POEM), then enables us to meta-learn consistent representations from partial observations. We evaluate our approach on an adaptation of a comprehensive few-shot learning benchmark, Meta-Dataset, and demonstrate the benefits of POEM over other meta-learning methods at representation learning from partial observations. We further demonstrate the utility of POEM by meta-learning to represent an environment from partial views observed by an agent exploring the environment.
+
+- title: "ACAT: Adversarial Counterfactual Attention for Classification and Detection in Medical Imaging"
+  authors: [Alessandro Fontanella, Antreas Antoniou, Wenwen Li, Joanna Wardlaw, Grant Mair, Emanuele Trucco, Amos Storkey]
+  year: 2023
+  month: 7
+  type: conference
+  published: International Conference on Machine Learning (ICML)
+  url: https://arxiv.org/abs/2303.15421
+  abstract: >
+    In some medical imaging tasks and other settings where only small parts of the image are informative for the classification task, traditional CNNs can sometimes struggle to generalise. Manually annotated Regions of Interest (ROI) are sometimes used to isolate the most informative parts of the image. However, these are expensive to collect and may vary significantly across annotators. To overcome these issues, we propose a framework that employs saliency maps to obtain soft spatial attention masks that modulate the image features at different scales. We refer to our method as Adversarial Counterfactual Attention (ACAT). ACAT increases the baseline classification accuracy of lesions in brain CT scans from 71.39% to 72.55% and of COVID-19 related findings in lung CT scans from 67.71% to 70.84% and exceeds the performance of competing methods. We investigate the best way to generate the saliency maps employed in our architecture and propose a way to obtain them from adversarially generated counterfactual images. They are able to isolate the area of interest in brain and lung CT scans without using any manual annotations. In the task of localising the lesion location out of 6 possible regions, they obtain a score of 65.05% on brain CT scans, improving the score of 61.29% obtained with the best competing method.
+
+- title: "Class Conditional Gaussians for Continual Learning"
+  authors: [Thomas L. Lee, Amos Storkey]
+  year: 2024
+  month: 5
+  type: conference
+  published: To appear at the International Conference on Artificial Intelligence and Statistics (AISTATS)
+  url: https://arxiv.org/abs/2305.19076
+  abstract: >
+    Dealing with representation shift is one of the main problems in online continual learning. Current methods mainly solve this by reducing representation shift, but leave the classifier on top of the representation to slowly adapt, in many update steps, to the remaining representation shift, increasing forgetting. We propose DeepCCG, an empirical Bayesian approach to solve this problem. DeepCCG works by updating the posterior of a class conditional Gaussian classifier such that the classifier adapts instantly to representation shift. The use of a class conditional Gaussian classifier also enables DeepCCG to use a log conditional marginal likelihood loss to update the representation, which can be seen as a new type of replay. To perform the update to the classifier and representation, DeepCCG maintains a fixed number of examples in memory and so a key part of DeepCCG is selecting what examples to store, choosing the subset that minimises the KL divergence between the true posterior and the posterior induced by the subset. We demonstrate the performance of DeepCCG on a range of settings, including those with overlapping tasks which thus far have been under-explored. In the experiments, DeepCCG outperforms all other methods, evidencing its potential.
+
+- title: "Efficient and fully-automatic retinal choroid segmentation in OCT through DL-based distillation of a hand-crafted pipeline"
+  authors: [Jamie Burke, Justin Engelmann, Charlene Hamid, Megan Reid-Schachter, Tom Pearson, Dan Pugh, Neeraj Dhaun, Stuart King, Tom MacGillivray, Miguel O Bernabeu, Amos Storkey, Ian JC MacCormick]
+  year: 2023
+  month: 7
+  type: preprint
+  url: https://arxiv.org/abs/2307.00904
+  abstract: >
+    Retinal vascular phenotypes, derived from low-cost, non-invasive retinal imaging, have been linked to systemic conditions such as cardio-, neuro- and reno-vascular disease. Recent high-resolution optical coherence tomography (OCT) allows imaging of the choroidal microvasculature which could provide more information about vascular health that complements the superficial retinal vessels, which current vascular phenotypes are based on. Segmentation of the choroid in OCT is a key step in quantifying choroidal parameters like thickness and area. Gaussian Process Edge Tracing (GPET) is a promising, clinically validated method for this. However, GPET is semi-automatic and thus requires time-consuming manual interventions by specifically trained personnel which introduces subjectivity and limits the potential for analysing larger datasets or deploying GPET into clinical practice. We introduce DeepGPET, which distils GPET into a neural network to yield a fully-automatic and efficient choroidal segmentation method. DeepGPET achieves excellent agreement with GPET on data from 3 clinical studies (AUC=0.9994, Dice=0.9664; Pearson correlation of 0.8908 for choroidal thickness and 0.9082 for choroidal area), while reducing the mean processing time per image from 34.49s (15.09) to 1.25s (0.10) on a standard laptop CPU and removing all manual interventions. DeepGPET will be made available for researchers upon publication.
+
+- title: "QuickQual: Lightweight, convenient retinal image quality scoring with off-the-shelf pretrained models"
+  authors: [Justin Engelmann, Amos Storkey, Miguel O. Bernabeu]
+  year: 2023
+  month: 7
+  type: preprint
+  url: https://arxiv.org/abs/2307.13646
+  abstract: >
+    Image quality remains a key problem for both traditional and deep learning (DL)-based approaches to retinal image analysis, but identifying poor quality images can be time consuming and subjective. Thus, automated methods for retinal image quality scoring (RIQS) are needed. The current state-of-the-art is MCFNet, composed of three Densenet121 backbones each operating in a different colour space. MCFNet, and the EyeQ dataset released by the same authors, was a huge step forward for RIQS. We present QuickQual, a simple approach to RIQS, consisting of a single off-the-shelf ImageNet-pretrained Densenet121 backbone plus a Support Vector Machine (SVM). QuickQual performs very well, setting a new state-of-the-art for EyeQ (Accuracy: 88.50% vs 88.00% for MCFNet; AUC: 0.9687 vs 0.9588). This suggests that RIQS can be solved with generic perceptual features learned on natural images, as opposed to requiring DL models trained on large amounts of fundus images. Additionally, we propose a Fixed Prior linearisation scheme, that converts EyeQ from a 3-way classification to a continuous logistic regression task. For this task, we present a second model, QuickQual MEga Minified Estimator (QuickQual-MEME), that consists of only 10 parameters on top of an off-the-shelf Densenet121 and can distinguish between gradable and ungradable images with an accuracy of 89.18% (AUC: 0.9537). Code and model are available on GitHub: this https URL . QuickQual is so lightweight, that the entire inference code (and even the parameters for QuickQual-MEME) is already contained in this paper. 
+
+- title: "Fine-mapping of retinal vascular complexity loci identifies Notch regulation as a shared mechanism with myocardial infarction outcomes"
+  authors: [Ana Villaplana-Velasco, Marie Pigeyre, Justin Engelmann, Konrad Rawlik, Oriol Canela-Xandri, Claire Tochel, Frida Lona-Durazo, Muthu Rama Krishnan Mookiah, Alex Doney, Esteban J Parra, Emanuele Trucco, Tom MacGillivray, Kristiina Rannikmae, Albert Tenesa, Erola Pairo-Castineira, Miguel O Bernabeu]
+  year: 2023
+  month: 5
+  type: journal
+  published: Communications Biology
+  url: https://www.nature.com/articles/s42003-023-04836-9
+  abstract: >
+    A genome-wide association study finds an inverse relationship between progression of coronary artery disease and retinal vasculature’s complexity measured as fractal dimension, and validates a predictive model for myocardial infarction.
+
+- title: "Diffusion Models for Counterfactual Generation and Anomaly Detection in Brain Images"
+  authors: [Alessandro Fontanella, Grant Mair, Joanna Wardlaw, Emanuele Trucco, Amos Storkey]
+  year: 2023
+  month: 8
+  type: preprint
+  url: https://arxiv.org/abs/2308.02062
+  abstract: >
+    Segmentation masks of pathological areas are useful in many medical applications, such as brain tumour and stroke management. Moreover, healthy counterfactuals of diseased images can be used to enhance radiologists' training files and to improve the interpretability of segmentation models. In this work, we present a weakly supervised method to generate a healthy version of a diseased image and then use it to obtain a pixel-wise anomaly map. To do so, we start by considering a saliency map that approximately covers the pathological areas, obtained with ACAT. Then, we propose a technique that allows to perform targeted modifications to these regions, while preserving the rest of the image. In particular, we employ a diffusion model trained on healthy samples and combine Denoising Diffusion Probabilistic Model (DDPM) and Denoising Diffusion Implicit Model (DDIM) at each step of the sampling process. DDPM is used to modify the areas affected by a lesion within the saliency map, while DDIM guarantees reconstruction of the normal anatomy outside of it. The two parts are also fused at each timestep, to guarantee the generation of a sample with a coherent appearance and a seamless transition between edited and unedited parts. We verify that when our method is applied to healthy samples, the input images are reconstructed without significant modifications. We compare our approach with alternative weakly supervised methods on IST-3 for stroke lesion segmentation and on BraTS2021 for brain tumour segmentation, where we improve the DICE score of the best competing method from 0.6534 to 0.7056.
+
+- title: "Generate Your Own Scotland: Satellite Image Generation Conditioned on Maps"
+  authors: [Miguel Espinosa, Elliot J. Crowley]
+  year: 2023
+  month: 12
+  published: NeurIPS 2023 Workshop on Diffusion Models
+  type: workshop
+  url: https://arxiv.org/abs/2308.16648
+  abstract: >
+    Despite recent advancements in image generation, diffusion models still remain largely underexplored in Earth Observation. In this paper we show that state-of-the-art pretrained diffusion models can be conditioned on cartographic data to generate realistic satellite images. We provide two large datasets of paired OpenStreetMap images and satellite views over the region of Mainland Scotland and the Central Belt. We train a ControlNet model and qualitatively evaluate the results, demonstrating that both image quality and map fidelity are possible. Finally, we provide some insights on the opportunities and challenges of applying these models for remote sensing. Our model weights and code for creating the dataset are publicly available at https://github.com/miquel-espinosa/map-sat.
+
+- title: "Deep learning detection of diabetic retinopathy in Scotland’s diabetic eye screening programme"
+  authors: [Alan D Fleming, Joseph Mellor, Stuart J McGurnaghan, Luke A K Blackbourn,  Keith A Goatman, Caroline Styles, Amos J Storkey, Paul M McKeigue, Helen M Colhoun]
+  year: 2023
+  month: 9
+  type: journal
+  url: https://bjo.bmj.com/content/early/2023/09/13/bjo-2023-323395
+  abstract: >
+    "Background/Aims Support vector machine-based automated grading (known as iGradingM) has been shown to be safe, cost-effective and robust in the diabetic retinopathy (DR) screening (DES) programme in Scotland. It triages screening episodes as gradable with no DR versus manual grading required. The study aim was to develop a deep learning-based autograder using images and gradings from DES and to compare its performance with that of iGradingM. Methods Retinal images, quality assurance (QA) data and routine DR grades were obtained from national datasets in 179 944 patients for years 2006–2016. QA grades were available for 744 images. We developed a deep learning-based algorithm to detect whether either eye contained ungradable images or any DR. The sensitivity and specificity were evaluated against consensus QA grades and routine grades. Results Images used in QA which were ungradable or with DR were detected by deep learning with better specificity compared with manual graders (p<0.001) and with iGradingM (p<0.001) at the same sensitivities. Any DR according to the DES final grade was detected with 89.19% (270 392/303 154) sensitivity and 77.41% (500 945/647 158) specificity. Observable disease and referable disease were detected with sensitivities of 96.58% (16 613/17 201) and 98.48% (22 600/22 948), respectively. Overall, 43.84% of screening episodes would require manual grading. Conclusion A deep learning-based system for DR grading was evaluated in QA data and images from 11 years in 50% of people attending a national DR screening programme. The system could reduce the manual grading workload at the same sensitivity compared with the current automated grading system."
+
+- title: "WidthFormer: Toward Efficient Transformer-based BEV View Transformation"
+  authors: [Chenhongyi Yang, Tianwei Lin, Lichao Huang, Elliot J. Crowley]
+  year: 2024
+  month: 1
+  type: preprint
+  url: https://arxiv.org/abs/2401.03836
+  abstract: >
+    In this work, we present WidthFormer, a novel transformer-based Bird's-Eye-View (BEV) 3D detection method tailored for real-time autonomous-driving applications. WidthFormer is computationally efficient, robust and does not require any special engineering effort to deploy. In this work, we propose a novel 3D positional encoding mechanism capable of accurately encapsulating 3D geometric information, which enables our model to generate high-quality BEV representations with only a single transformer decoder layer. This mechanism is also beneficial for existing sparse 3D object detectors. Inspired by the recently-proposed works, we further improve our model's efficiency by vertically compressing the image features when serving as attention keys and values. We also introduce two modules to compensate for potential information loss due to feature compression. Experimental evaluation on the widely-used nuScenes 3D object detection benchmark demonstrates that our method outperforms previous approaches across different 3D detection architectures. More importantly, our model is highly efficient. For example, when using 256×704 input images, it achieves 1.5 ms and 2.8 ms latency on NVIDIA 3090 GPU and Horizon Journey-5 edge computing chips, respectively. Furthermore, WidthFormer also exhibits strong robustness to different degrees of camera perturbations. Our study offers valuable insights into the deployment of BEV transformation methods in real-world, complex road environments. Code is available at https://github.com/ChenhongyiYang/WidthFormer.
+
+- title: "DLAS: An Exploration and Assessment of the Deep Learning Acceleration Stack"
+  authors: [Perry Gibson, José Cano, Elliot J. Crowley, Amos Storkey, Michael O'Boyle]
+  year: 2023
+  month: 11
+  type: preprint
+  url: https://arxiv.org/abs/2311.08909
+  abstract: >
+    Deep Neural Networks (DNNs) are extremely computationally demanding, which presents a large barrier to their deployment on resource-constrained devices. Since such devices are where many emerging deep learning applications lie (e.g., drones, vision-based medical technology), significant bodies of work from both the machine learning and systems communities have attempted to provide optimizations to accelerate DNNs. To help unify these two perspectives, in this paper we combine machine learning and systems techniques within the Deep Learning Acceleration Stack (DLAS), and demonstrate how these layers can be tightly dependent on each other with an across-stack perturbation study. We evaluate the impact on accuracy and inference time when varying different parameters of DLAS across two datasets, seven popular DNN architectures, four DNN compression techniques, three algorithmic primitives with sparse and dense variants, untuned and auto-scheduled code generation, and four hardware platforms. Our evaluation highlights how perturbations across DLAS parameters can cause significant variation and across-stack interactions. The highest level observation from our evaluation is that the model size, accuracy, and inference time are not guaranteed to be correlated. Overall we make 13 key observations, including that speedups provided by compression techniques are very hardware dependent, and that compiler auto-tuning can significantly alter what the best algorithm to use for a given configuration is. With DLAS, we aim to provide a reference framework to aid machine learning and systems practitioners in reasoning about the context in which their respective DNN acceleration solutions exist in. With our evaluation strongly motivating the need for co-design, we believe that DLAS can be a valuable concept for exploring the next generation of co-designed accelerated deep learning solutions.
+
+- title: "PlainMamba: Improving Non-Hierarchical Mamba in Visual Recognition"
+  authors: [Chenhongyi Yang, Zehui Chen, Miguel Espinosa, Linus Ericsson, Zhenyu Wang, Jiaming Liu, Elliot J. Crowley]
+  year: 2024
+  month: 3
+  type: preprint
+  url: https://arxiv.org/abs/2403.17695
+  abstract: >
+    We present PlainMamba: a simple non-hierarchical state space model (SSM) designed for general visual recognition. The recent Mamba model has shown how SSMs can be highly competitive with other architectures on sequential data and initial attempts have been made to apply it to images. In this paper, we further adapt the selective scanning process of Mamba to the visual domain, enhancing its ability to learn features from two-dimensional images by (i) a continuous 2D scanning process that improves spatial continuity by ensuring adjacency of tokens in the scanning sequence, and (ii) direction-aware updating which enables the model to discern the spatial relations of tokens by encoding directional information. Our architecture is designed to be easy to use and easy to scale, formed by stacking identical PlainMamba blocks, resulting in a model with constant width throughout all layers. The architecture is further simplified by removing the need for special tokens. We evaluate PlainMamba on a variety of visual recognition tasks including image classification, semantic segmentation, object detection, and instance segmentation. Our method achieves performance gains over previous non-hierarchical models and is competitive with hierarchical alternatives. For tasks requiring high-resolution inputs, in particular, PlainMamba requires much less computing while maintaining high performance. Code and models are available at https://github.com/ChenhongyiYang/PlainMamba
+
+- title: "EgoPoseFormer: A Simple Baseline for Egocentric 3D Human Pose Estimation"
+  authors: [Chenhongyi Yang, Anastasia Tkach, Shreyas Hampali, Linguang Zhang, Elliot J. Crowley, Cem Keskin]
+  year: 2024
+  month: 3
+  type: preprint
+  url: https://arxiv.org/abs/2403.18080
+  abstract: >
+    We present EgoPoseFormer, a simple yet effective transformer-based model for stereo egocentric human pose estimation. The main challenge in egocentric pose estimation is overcoming joint invisibility, which is caused by self-occlusion or a limited field of view (FOV) of head-mounted cameras. Our approach overcomes this challenge by incorporating a two-stage pose estimation paradigm: in the first stage, our model leverages the global information to estimate each joint's coarse location, then in the second stage, it employs a DETR style transformer to refine the coarse locations by exploiting fine-grained stereo visual features. In addition, we present a deformable stereo operation to enable our transformer to effectively process multi-view features, which enables it to accurately localize each joint in the 3D world. We evaluate our method on the stereo UnrealEgo dataset and show it significantly outperforms previous approaches while being computationally efficient: it improves MPJPE by 27.4mm (45% improvement) with only 7.9% model parameters and 13.1% FLOPs compared to the state-of-the-art. Surprisingly, with proper training techniques, we find that even our first-stage pose proposal network can achieve superior performance compared to previous arts. We also show that our method can be seamlessly extended to monocular settings, which achieves state-of-the-art performance on the SceneEgo dataset, improving MPJPE by 25.5mm (21% improvement) compared to the best existing method with only 60.7% model parameters and 36.4% FLOPs.
+
+- title: "Hyperparameter Selection in Continual Learning"
+  authors: [Thomas L. Lee, Sigrid Passano Hellan, Linus Ericsson, Elliot J. Crowley, Amos Storkey]
+  year: 2024
+  month: 4
+  type: preprint
+  url: https://arxiv.org/abs/2404.06466
+  abstract: >
+    In continual learning (CL) -- where a learner trains on a stream of data -- standard hyperparameter optimisation (HPO) cannot be applied, as a learner does not have access to all of the data at the same time. This has prompted the development of CL-specific HPO frameworks. The most popular way to tune hyperparameters in CL is to repeatedly train over the whole data stream with different hyperparameter settings. However, this end-of-training HPO is unrealistic as in practice a learner can only see the stream once. Hence, there is an open question: what HPO framework should a practitioner use for a CL problem in reality? This paper answers this question by evaluating several realistic HPO frameworks. We find that all the HPO frameworks considered, including end-of-training HPO, perform similarly. We therefore advocate using the realistic and most computationally efficient method: fitting the hyperparameters on the first task and then fixing them throughout training.
+
+- title: "Skin Malignancy Classification Using Patients' Skin Images and Meta-data: Multimodal Fusion for Improving Fairness"
+  authors: [Ke Wang, Ningyuan Shan, Henry Gouk, Iris Szu-Szu Ho]
+  year: 2024
+  month: 7
+  type: conference
+  published: Medical Imaging with Deep Learning
+  url: https://openreview.net/forum?id=5TWfxGVFWc
+  abstract: >
+    Skin cancer image classification across skin tones is a challenging problem due to the fact that skin cancer can present differently on different skin tones. This study evaluates the performance of image only models and fusion models in skin malignancy classification. The fusion models we consider are able to take in additional patient data, such as an indicator of their skin tone, and merge this information with the features provided by the image-only model. Results from the experiment show that fusion models perform substantially better than image-only models. In particular, we find that a form of multiplicative fusion results in the best performing models. This finding suggests that skin tones add predictive value in skin malignancy prediction problems. We further demonstrate that feature fusion methods reduce, but do not entirely eliminate, the disparity in performance of the model on patients with different skin tones.
+
+- title: "Is Scaling Learned Optimizers Worth It? Evaluating The Value of VeLO's 4000 TPU Months"
+  authors: [Fady Rezk, Antreas Antoniou, Henry Gouk, Timothy Hospedales]
+  year: 2023
+  month: 12
+  type: workshop
+  published: I Can't Believe It's Not Better! (NeurIPS Workshop)
+  url: https://arxiv.org/abs/2310.18191
+  abstract: >
+    We analyze VeLO (versatile learned optimizer), the largest scale attempt to train a general purpose "foundational" optimizer to date. VeLO was trained on thousands of machine learning tasks using over 4000 TPU months with the goal of producing an optimizer capable of generalizing to new problems while being hyperparameter free, and outperforming industry standards such as Adam. We independently evaluate VeLO on the MLCommons optimizer benchmark suite. We find that, contrary to initial claims: (1) VeLO has a critical hyperparameter that needs problem-specific tuning, (2) VeLO does not necessarily outperform competitors in quality of solution found, and (3) VeLO is not faster than competing optimizers at reducing the training loss. These observations call into question VeLO's generality and the value of the investment in training it.
+
+- title: "Evaluating the Evaluators: Are Current Few-Shot Learning Benchmarks Fit for Purpose?"
+  authors: [Luisa Shimabucoro, Timothy Hospedales, Henry Gouk]
+  year: 2023
+  month: 7
+  type: workshop
+  published: ICML Workshop on Data-Centric Machine Learning Research
+  url: https://arxiv.org/abs/2307.02732
+  abstract: >
+    Numerous benchmarks for Few-Shot Learning have been proposed in the last decade. However all of these benchmarks focus on performance averaged over many tasks, and the question of how to reliably evaluate and tune models trained for individual tasks in this regime has not been addressed. This paper presents the first investigation into task-level evaluation -- a fundamental step when deploying a model. We measure the accuracy of performance estimators in the few-shot setting, consider strategies for model selection, and examine the reasons for the failure of evaluators usually thought of as being robust. We conclude that cross-validation with a low number of folds is the best choice for directly estimating the performance of a model, whereas using bootstrapping or cross validation with a large number of folds is better for model selection purposes. Overall, we find that existing benchmarks for few-shot learning are not designed in such a way that one can get a reliable picture of how effectively methods can be used on individual tasks.
+
+- title: "Effectiveness of Debiasing Techniques: An Indigenous Qualitative Analysis"
+  authors: [Vithya Yogarajan, Gillian Dobbie, Henry Gouk]
+  year: 2023
+  month: 5
+  type: conference
+  published: International Conference on Learning Representations (Tiny Papers Track)
+  url: https://arxiv.org/abs/2304.11094
+  abstract: >
+    An indigenous perspective on the effectiveness of debiasing techniques for pre-trained language models (PLMs) is presented in this paper. The current techniques used to measure and debias PLMs are skewed towards the US racial biases and rely on pre-defined bias attributes (e.g. "black" vs "white"). Some require large datasets and further pre-training. Such techniques are not designed to capture the underrepresented indigenous populations in other countries, such as M\=aori in New Zealand. Local knowledge and understanding must be incorporated to ensure unbiased algorithms, especially when addressing a resource-restricted society.
+
+- title: "Amortised Invariance Learning for Contrastive Self-Supervision"
+  authors: [Ruchika Chavhan, Henry Gouk, Jan Stuehmer, Calum Heggan, Mehrdad Taghoobi, Timothy Hospedales]
+  year: 2023
+  month: 5
+  type: conference
+  published: International Conference on Learning Representations
+  url: https://arxiv.org/abs/2302.12712
+  abstract: >
+    Contrastive self-supervised learning methods famously produce high quality transferable representations by learning invariances to different data augmentations. Invariances established during pre-training can be interpreted as strong inductive biases. However these may or may not be helpful, depending on if they match the invariance requirements of downstream tasks or not. This has led to several attempts to learn task-specific invariances during pre-training, however, these methods are highly compute intensive and tedious to train. We introduce the notion of amortised invariance learning for contrastive self supervision. In the pre-training stage, we parameterize the feature extractor by differentiable invariance hyper-parameters that control the invariances encoded by the representation. Then, for any downstream task, both linear readout and task-specific invariance requirements can be efficiently and effectively learned by gradient-descent. We evaluate the notion of amortised invariances for contrastive learning over two different modalities: vision and audio, on two widely-used contrastive learning methods in vision: SimCLR and MoCo-v2 with popular architectures like ResNets and Vision Transformers, and SimCLR with ResNet-18 for audio. We show that our amortised features provide a reliable way to learn diverse downstream tasks with different invariance requirements, while using a single feature and avoiding task-specific pre-training. This provides an exciting perspective that opens up new horizons in the field of general purpose representation learning.
+
+- title: "Quality Diversity for Visual Pre-Training"
+  authors: [Ruchika Chavhan, Henry Gouk, Da Li, Timothy Hospedales]
+  year: 2023
+  month: 10
+  type: conference
+  published: International Conference on Computer Vision
+  url: http://openaccess.thecvf.com/content/ICCV2023/html/Chavhan_Quality_Diversity_for_Visual_Pre-Training_ICCV_2023_paper.html
+  abstract: >
+    Models pre-trained on large datasets such as ImageNet provide the de-facto standard for transfer learning, with both supervised and self-supervised approaches proving effective. However, emerging evidence suggests that any single pre-trained feature will not perform well on diverse downstream tasks. Each pre-training strategy encodes a certain inductive bias, which may suit some downstream tasks but not others. Notably, the augmentations used in both supervised and self-supervised training lead to features with high invariance to spatial and appearance transformations. This renders them sub-optimal for tasks that demand sensitivity to these factors. In this paper we develop a feature that better supports diverse downstream tasks by providing a diverse set of sensitivities and invariances. In particular, we are inspired by Quality-Diversity in evolution, to define a pre-training objective that requires high quality yet diverse features--where diversity is defined in terms of transformation (in) variances. Our framework plugs in to both supervised and self-supervised pre-training, and produces a small ensemble of features. We further show how downstream tasks can easily and efficiently select their preferred (in) variances. Both empirical and theoretical analysis show the efficacy of our representation and transfer learning approach for diverse downstream tasks.
+
+- title: "Meta omnium: A benchmark for general-purpose learning-to-learn"
+  authors: [Ondrej Bohdal, Yinbing Tian, Yongshuo Zong, Ruchika Chavhan, Da Li, Henry Gouk, Li Guo, Timothy Hospedales]
+  year: 2023
+  month: 6
+  type: conference
+  published: Computer Vision and Pattern Recognition
+  url: http://openaccess.thecvf.com/content/CVPR2023/html/Bohdal_Meta_Omnium_A_Benchmark_for_General-Purpose_Learning-To-Learn_CVPR_2023_paper.html
+  abstract: >
+    Meta-learning and other approaches to few-shot learning are widely studied for image recognition, and are increasingly applied to other vision tasks such as pose estimation and dense prediction. This naturally raises the question of whether there is any few-shot meta-learning algorithm capable of generalizing across these diverse task types? To support the community in answering this question, we introduce Meta Omnium, a dataset-of-datasets spanning multiple vision tasks including recognition, keypoint localization, semantic segmentation and regression. We experiment with popular few-shot meta-learning baselines and analyze their ability to generalize across tasks and to transfer knowledge between them. Meta Omnium enables meta-learning researchers to evaluate model generalization to a much wider array of tasks than previously possible, and provides a single framework for evaluating meta-learners across a wide suite of vision applications in a consistent manner.

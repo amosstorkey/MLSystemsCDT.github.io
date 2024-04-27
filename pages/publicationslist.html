@@ -1,0 +1,36 @@
+---
+layout: default
+permalink: /publicationslist/
+redirect_from:
+  - /publicationslist.html
+  - /publicationslist
+title: Publications List
+---
+
+<div>
+    <h2>Publications List</h2>
+    <p>
+    <button class="conference">conference</button>
+    <button class="workshop">workshop</button>
+    <button class="preprint">preprint</button>
+    <button class="journal">journal</button>
+    <button class="techreport">tech report</button>
+    </p>
+    <ul class='publication-list'>
+    {% assign sorted_pubs = site.data.publications | sort: "month" | sort: "year" | reverse %}
+    {% for pub in  sorted_pubs %}
+        {% assign id = pub.title | append: '-' | append: pub.published | slugify  %}
+        {% if pub.year > 2009 %} 
+        <li class='publication'>
+        <div class='clearfix'>
+            <div class='publication-details'>
+                    {{ pub.authors | join: ', ' }} ({{ pub.year }}) 
+                <a class='publication-title'  href="{{ pub.url }}"> {{ pub.title }}</a>. {{ pub.published }} 
+                </p>
+            </div>
+        </div> 
+        </li>
+       {% endif %}
+    {% endfor %}
+    </ul>
+</div>
