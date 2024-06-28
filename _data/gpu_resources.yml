@@ -1,4 +1,9 @@
-- name: benrinnes
+- name: deadalus
+  gpus: 4 x RTX6000 Ada
+  storage: scratch scratch0 scratch1 scratch2 scratch3 scratch_fast0 scratch_fast1 scratch_fast2
+  info:
+  
+  - name: benrinnes
   gpus: 8 x GeForce RTX 2080 Ti
   storage: scratch_ssd (SSD 917G), scratch1 (9.1T), scratch2 (9.1T)
   info:
